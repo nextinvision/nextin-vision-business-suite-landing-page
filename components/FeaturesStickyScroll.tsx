@@ -98,9 +98,18 @@ const content = features.map((feature) => ({
     ),
 }));
 
+import BlurText from "@/components/BlurText";
+
 export function FeaturesStickyScroll() {
     return (
         <div className="w-full py-2">
+            <div className="w-full flex justify-center mt-20 mb-2">
+                <BlurText
+                    text="Powerful Features for Modern Businesses"
+                    className="text-3xl md:text-5xl font-bold text-white text-center font-heading justify-center"
+                    delay={50}
+                />
+            </div>
             <StickyScroll content={content} />
         </div>
     );
