@@ -10,7 +10,7 @@ export const StickyScroll = ({
 }: {
   content: {
     title: string;
-    description: string;
+    description: React.ReactNode | string;
     content?: React.ReactNode | any;
   }[];
   contentClassName?: string;
@@ -42,7 +42,7 @@ export const StickyScroll = ({
 
   return (
     <motion.div
-      className="relative flex h-[30rem] justify-center space-x-40 overflow-y-auto rounded-md p-10 no-visible-scrollbar"
+      className="relative flex h-[30rem] justify-center space-x-10 md:space-x-40 overflow-y-auto rounded-md p-4 md:p-10 no-visible-scrollbar"
       style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
       ref={ref}
     >
@@ -61,7 +61,7 @@ export const StickyScroll = ({
               >
                 {item.title}
               </motion.h2>
-              <motion.p
+              <motion.div
                 initial={{
                   opacity: 0,
                 }}
@@ -71,7 +71,7 @@ export const StickyScroll = ({
                 className="text-kg mt-10 max-w-sm text-slate-300"
               >
                 {item.description}
-              </motion.p>
+              </motion.div>
             </div>
           ))}
           <div className="h-40" />

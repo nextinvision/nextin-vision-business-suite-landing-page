@@ -9,7 +9,7 @@ export default function Header() {
             <div className="w-full min-h-screen flex flex-col pt-24 md:pt-32">
                 <div className="flex flex-col items-center justify-center w-full px-4 text-center flex-1">
                     <BlurText className="text-white text-4xl md:text-6xl mb-2 justify-center font-heading" text="All-in-One" />
-                    <BlurText className="text-white text-3xl md:text-6xl mb-4 justify-center font-heading" text="Business Management Platform" />
+                    <BlurText className="text-white text-4xl md:text-6xl mb-4 justify-center font-heading" text="Business Management Platform" />
                     <ShinyText
                         text="Streamline your projects, manage your team, track finances, and grow your business—all from one powerful platform. Built for teams that demand efficiency, security, and scalability."
                         disabled={false}

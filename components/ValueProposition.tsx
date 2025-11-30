@@ -4,14 +4,14 @@ import ShinyText from "@/components/ShinyText";
 
 export default function ValueProposition() {
     return (
-        <section className="w-full py-10 md:py-20 relative z-10">
+        <section className="w-full pt-6 md:pt-20 pb-6 md:pb-10 relative z-10">
             <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
 
                 {/* Left Content */}
                 <div className="space-y-8">
                     <BlurText
                         text="Everything Your Business Needs, in One Place"
-                        className="text-4xl md:text-5xl font-semibold text-white font-heading leading-tight"
+                        className="text-4xl text-white font-heading leading-tight"
                         delay={50}
                     />
 
