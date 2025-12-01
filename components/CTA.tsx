@@ -9,7 +9,7 @@ export default function CTA() {
             <div className="relative z-10">
                 <BlurText
                     text="Ready to Transform Your Business?"
-                    className="text-4xl text-white mb-6 font-heading justify-center"
+                    className="text-3xl md:text-5xl text-white mb-6 font-heading justify-center"
                     delay={50}
                 />
                 <p className="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto mb-10">

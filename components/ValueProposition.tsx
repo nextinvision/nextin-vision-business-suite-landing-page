@@ -11,7 +11,7 @@ export default function ValueProposition() {
                 <div className="space-y-8">
                     <BlurText
                         text="Everything Your Business Needs, in One Place"
-                        className="text-4xl text-white font-heading leading-tight"
+                        className="text-3xl md:text-5xl text-white font-heading leading-tight"
                         delay={50}
                     />
 

@@ -14,7 +14,7 @@ export default function FAQ() {
                 <div>
                     <BlurText
                         text="Frequently Asked Questions"
-                        className="text-4xl text-white font-heading"
+                        className="text-3xl md:text-5xl text-white font-heading"
                         delay={50}
                     />
                 </div>

@@ -14,7 +14,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Business Management Platform | All-in-One Solution",
+  title: "Nextin Project Management - All-in-One Business Management Platform",
   description: "Streamline your projects, manage your team, track finances, and grow your business with our powerful all-in-one platform.",
   openGraph: {
     title: "Business Management Platform | All-in-One Solution",
