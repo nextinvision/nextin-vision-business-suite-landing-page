@@ -16,7 +16,7 @@ export default function ValueProposition() {
                     />
 
                     <ShinyText
-                        text="Nextin Project Management is a comprehensive SaaS platform designed to help businesses of all sizes manage their operations efficiently. From project planning to team collaboration, from invoicing to HR management — we've got you covered."
+                        text="Nextin Project Management is a comprehensive SaaS platform designed to help businesses of all sizes manage their operations efficiently. From project planning to team collaboration, from invoicing to HR management—we've got you covered."
                         disabled={false}
                         speed={3}
                         className="text-lg leading-relaxed text-muted-foreground"
@@ -30,7 +30,7 @@ export default function ValueProposition() {
                         "Enterprise-Grade Security: Multi-tenant architecture with complete data isolation",
                         "Scalable Infrastructure: Built to grow with your business, from startup to enterprise",
                         "Customizable: Tailor the platform to your company's unique needs",
-                        "Real-Time Collaboration: Stay connected with instant notifications",
+                        "Real-Time Collaboration: Stay connected with your team through instant notifications",
                     ].map((item) => (
                         <div
                             key={item}

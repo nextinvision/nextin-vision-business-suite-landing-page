@@ -74,7 +74,7 @@ function MultiTenantCard() {
                     </li>
                     <li className="flex items-start gap-2">
                         <span className="mt-1 w-1.5 h-1.5 rounded-full bg-blue-500 shrink-0" />
-                        Flexible database routing
+                        Flexible database routing (shared or dedicated)
                     </li>
                     <li className="flex items-start gap-2">
                         <span className="mt-1 w-1.5 h-1.5 rounded-full bg-blue-500 shrink-0" />
@@ -141,7 +141,10 @@ function ScalablePerformanceCard() {
                 <div className="w-10 h-10 rounded-lg bg-orange-500/20 flex items-center justify-center mb-2">
                     <Zap className="w-5 h-5 text-orange-400" />
                 </div>
-                <CardTitle className="text-neutral-200 text-lg">Performance</CardTitle>
+                <CardTitle className="text-neutral-200 text-lg">Scalable Infrastructure</CardTitle>
+                <CardDescription className="text-neutral-400">
+                    Grows with Your Business
+                </CardDescription>
             </CardHeader>
             <CardContent>
                 <ul className="space-y-2 text-sm text-neutral-400">
@@ -151,7 +154,7 @@ function ScalablePerformanceCard() {
                     </li>
                     <li className="flex items-center gap-2">
                         <Server className="w-4 h-4 text-orange-500" />
-                        Connection pooling
+                        Connection pooling for optimal performance
                     </li>
                     <li className="flex items-center gap-2">
                         <Server className="w-4 h-4 text-orange-500" />
@@ -170,7 +173,7 @@ function ScalableStorageCard() {
                 <div className="w-10 h-10 rounded-lg bg-purple-500/20 flex items-center justify-center mb-2">
                     <Database className="w-5 h-5 text-purple-400" />
                 </div>
-                <CardTitle className="text-neutral-200 text-lg">Storage</CardTitle>
+                <CardTitle className="text-neutral-200 text-lg">Storage & Optimization</CardTitle>
             </CardHeader>
             <CardContent>
                 <ul className="space-y-2 text-sm text-neutral-400">
@@ -180,11 +183,11 @@ function ScalableStorageCard() {
                     </li>
                     <li className="flex items-center gap-2">
                         <Cpu className="w-4 h-4 text-purple-500" />
-                        Query optimization
+                        Database query optimization
                     </li>
                     <li className="flex items-center gap-2">
                         <Cpu className="w-4 h-4 text-purple-500" />
-                        GridFS for large files
+                        GridFS for large file storage
                     </li>
                 </ul>
             </CardContent>
@@ -199,21 +202,24 @@ function FrontendStackCard() {
                 <div className="w-10 h-10 rounded-lg bg-cyan-500/20 flex items-center justify-center mb-2">
                     <Code className="w-5 h-5 text-cyan-400" />
                 </div>
-                <CardTitle className="text-neutral-200 text-lg">Frontend</CardTitle>
+                <CardTitle className="text-neutral-200 text-lg">Modern Technology Stack</CardTitle>
+                <CardDescription className="text-neutral-400">
+                    Built with Best-in-Class Tools
+                </CardDescription>
             </CardHeader>
             <CardContent>
                 <ul className="space-y-2 text-sm text-neutral-400">
                     <li className="flex items-center gap-2">
                         <Globe className="w-4 h-4 text-cyan-500" />
-                        Next.js 15 & React 19
+                        Next.js 15: Latest React framework with App Router
                     </li>
                     <li className="flex items-center gap-2">
                         <Globe className="w-4 h-4 text-cyan-500" />
-                        TypeScript
+                        React 19: Modern UI library
                     </li>
                     <li className="flex items-center gap-2">
                         <Globe className="w-4 h-4 text-cyan-500" />
-                        Tailwind CSS
+                        TypeScript: Type-safe development
                     </li>
                 </ul>
             </CardContent>
@@ -228,21 +234,21 @@ function BackendStackCard() {
                 <div className="w-10 h-10 rounded-lg bg-pink-500/20 flex items-center justify-center mb-2">
                     <Layers className="w-5 h-5 text-pink-400" />
                 </div>
-                <CardTitle className="text-neutral-200 text-lg">Backend</CardTitle>
+                <CardTitle className="text-neutral-200 text-lg">Backend & Database</CardTitle>
             </CardHeader>
             <CardContent>
                 <ul className="space-y-2 text-sm text-neutral-400">
                     <li className="flex items-center gap-2">
                         <Database className="w-4 h-4 text-pink-500" />
-                        MongoDB
+                        MongoDB: Scalable NoSQL database
                     </li>
                     <li className="flex items-center gap-2">
                         <Database className="w-4 h-4 text-pink-500" />
-                        Prisma ORM
+                        Prisma: Modern ORM for database operations
                     </li>
                     <li className="flex items-center gap-2">
                         <Database className="w-4 h-4 text-pink-500" />
-                        Server Actions
+                        Tailwind CSS: Utility-first styling
                     </li>
                 </ul>
             </CardContent>

@@ -38,7 +38,7 @@ export default function Header() {
                     {/* Hero Image Placeholder */}
                     <div className="w-full max-w-6xl flex-1 min-h-[300px] rounded-t-2xl border-x border-t border-white/10 bg-white/5 backdrop-blur-sm flex items-center justify-center text-white/20 relative overflow-hidden">
                         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/20" />
-                        Hero Image Placeholder
+                        Modern dashboard interface showing project overview, task management, and analytics in a clean, professional design
                     </div>
                 </div>
             </div>
