@@ -2,6 +2,7 @@
 
 import React from "react";
 import BlurText from "@/components/BlurText";
+import { Button } from "@/components/ui/button";
 import {
     LayoutGrid,
     ShieldCheck,
@@ -9,6 +10,8 @@ import {
     Smile,
     Wallet,
     MessageCircle,
+    ChevronDown,
+    ChevronUp,
 } from "lucide-react";
 
 const benefits = [
@@ -99,6 +102,10 @@ const benefits = [
 ];
 
 export default function Benefits() {
+    const [showAll, setShowAll] = React.useState(false);
+
+    const displayedBenefits = showAll ? benefits : benefits.slice(0, 3);
+
     return (
         <section className="py-20 w-full max-w-7xl mx-auto px-4">
             <div className="text-center mb-16">
@@ -113,7 +120,7 @@ export default function Benefits() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {benefits.map((benefit, index) => (
+                {displayedBenefits.map((benefit, index) => (
                     <div
                         key={index}
                         className="group p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 hover:-translate-y-1"
@@ -135,13 +142,31 @@ export default function Benefits() {
                                     key={idx}
                                     className="flex items-center gap-2 text-sm text-neutral-500 group-hover:text-neutral-400 transition-colors"
                                 >
-                                    <span className={`w-1.5 h-1.5 rounded-full ${benefit.bg.replace('/20', '')}`} />
+                                    <span className="w-1.5 h-1.5 rounded-full bg-blue-500" />
                                     {detail}
                                 </li>
                             ))}
                         </ul>
                     </div>
                 ))}
+            </div>
+
+            <div className="flex justify-center mt-12">
+                <Button
+                    variant="outline"
+                    onClick={() => setShowAll(!showAll)}
+                    className="bg-white/5 border-white/10 text-white hover:bg-white/10 hover:text-white min-w-[140px]"
+                >
+                    {showAll ? (
+                        <>
+                            View Less <ChevronUp className="ml-2 h-4 w-4" />
+                        </>
+                    ) : (
+                        <>
+                            View More <ChevronDown className="ml-2 h-4 w-4" />
+                        </>
+                    )}
+                </Button>
             </div>
         </section>
     );

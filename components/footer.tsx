@@ -46,11 +46,11 @@ const Footer = ({
     {
       title: "Resources",
       links: [
-        { text: "Documentation", url: "#" },
-        { text: "User Guide", url: "#" },
-        { text: "API Documentation", url: "#" },
-        { text: "Blog", url: "#" },
-        { text: "Support Center", url: "#" },
+        { text: "Documentation", url: "/coming-soon" },
+        { text: "User Guide", url: "/coming-soon" },
+        { text: "API Documentation", url: "/coming-soon" },
+        { text: "Blog", url: "/#" },
+        { text: "Support Center", url: "/coming-soon" },
       ],
     },
     {
@@ -78,7 +78,7 @@ const Footer = ({
   bottomLinks = [],
 }: FooterProps) => {
   return (
-    <section className="py-16 w-full border-t border-white/10 bg-white/5 backdrop-blur-sm">
+    <section className="py-16 w-full border-t border-white/10 bg-white/5 backdrop-blur-sm overflow-hidden">
       <div className="container mx-auto px-6">
         <footer>
           <div className="grid grid-cols-2 gap-8 lg:grid-cols-6 mb-12">
@@ -137,7 +137,7 @@ const Footer = ({
             ))}
           </div>
           <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
-            <p>{copyright}</p>
+            <p className="text-justify">{copyright}</p>
             <ul className="flex gap-6">
               {bottomLinks.map((link, linkIdx) => (
                 <li key={linkIdx} className="hover:text-white transition-colors">

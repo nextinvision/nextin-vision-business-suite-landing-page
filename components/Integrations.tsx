@@ -68,7 +68,7 @@ export default function Integrations() {
                     direction="top"
                     as="h2"
                 />
-                <p className="mt-4 text-neutral-400 max-w-2xl mx-auto">
+                <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
                     Seamlessly integrate Nextin with the tools you already use.
                 </p>
             </div>
@@ -95,7 +95,7 @@ export default function Integrations() {
             </div>
 
             <div className="mt-12 text-center">
-                <p className="text-sm text-neutral-500 italic">
+                <p className="text-sm text-muted-foreground mt-1">
                     *Note: Some integrations may be planned for future releases
                 </p>
             </div>

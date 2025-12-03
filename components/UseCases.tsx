@@ -111,7 +111,7 @@ export default function UseCases() {
                                             </CardDescription>
                                         </CardHeader>
                                         <CardContent className="flex-1 flex flex-col justify-between gap-6">
-                                            <p className="text-neutral-400 text-sm leading-relaxed">
+                                            <p className="text-neutral-400 text-sm leading-relaxed text-justify">
                                                 {useCase.description}
                                             </p>
                                             <div>

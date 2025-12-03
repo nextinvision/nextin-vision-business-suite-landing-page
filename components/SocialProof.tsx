@@ -15,7 +15,7 @@ export default function SocialProof() {
         <section className="py-12 w-full border-y border-white/10 bg-white/5 backdrop-blur-sm">
             <div className="max-w-7xl mx-auto px-4">
                 <div className="text-center mb-10">
-                    <p className="text-neutral-400 text-sm font-medium uppercase tracking-widest">
+                    <p className="text-neutral-400 text-sm font-medium uppercase tracking-widest text-justify">
                         Trusted by Businesses Worldwide
                     </p>
                 </div>

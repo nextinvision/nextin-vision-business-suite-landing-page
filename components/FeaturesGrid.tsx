@@ -1,7 +1,8 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import BlurText from "@/components/BlurText";
+import { Button } from "@/components/ui/button";
 import {
     KanbanSquare,
     CheckSquare,
@@ -14,6 +15,8 @@ import {
     Folder,
     Settings,
     Check,
+    ChevronDown,
+    ChevronUp,
 } from "lucide-react";
 
 const features = [
@@ -190,6 +193,9 @@ const features = [
 ];
 
 export default function FeaturesGrid() {
+    const [isExpanded, setIsExpanded] = useState(false);
+    const visibleFeatures = isExpanded ? features : features.slice(0, 3);
+
     return (
         <section className="py-20 w-full max-w-7xl mx-auto px-4">
             <div className="text-center mb-16">
@@ -203,8 +209,8 @@ export default function FeaturesGrid() {
                 />
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
-                {features.map((feature, index) => (
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 mb-12">
+                {visibleFeatures.map((feature, index) => (
                     <div
                         key={index}
                         className="flex flex-col gap-4 p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 transition-colors"
@@ -221,13 +227,31 @@ export default function FeaturesGrid() {
                             <p className="text-sm text-neutral-400 font-medium mb-4 uppercase tracking-wider">
                                 {feature.title}
                             </p>
-                            <p className="text-neutral-400 text-sm leading-relaxed mb-6">
+                            <p className="text-neutral-400 text-sm leading-relaxed mb-6 text-justify">
                                 {feature.description}
                             </p>
 
                         </div>
                     </div>
                 ))}
+            </div>
+
+            <div className="flex justify-center">
+                <Button
+                    variant="outline"
+                    onClick={() => setIsExpanded(!isExpanded)}
+                    className="bg-white/5 border-white/10 text-white hover:bg-white/10 hover:text-white min-w-[140px]"
+                >
+                    {isExpanded ? (
+                        <>
+                            View Less <ChevronUp className="ml-2 h-4 w-4" />
+                        </>
+                    ) : (
+                        <>
+                            View More <ChevronDown className="ml-2 h-4 w-4" />
+                        </>
+                    )}
+                </Button>
             </div>
         </section>
     );

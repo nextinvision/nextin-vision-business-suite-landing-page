@@ -23,10 +23,10 @@ export function TestimonialsSection({
   return (
     <section className={cn(
       "text-foreground",
-      "py-12 sm:py-24 md:py-32 px-0",
+      "pt-0 pb-12 sm:pb-24 md:pb-32 px-0",
       className
     )}>
-      <div className="mx-auto flex max-w-container flex-col items-center gap-4 text-center sm:gap-16">
+      <div className="mx-auto flex max-w-7xl px-4 flex-col items-center gap-4 text-center sm:gap-16">
         <div className="flex flex-col items-center gap-4 px-4 sm:gap-8">
           <BlurText
             text={title}
@@ -57,6 +57,16 @@ export function TestimonialsSection({
                 testimonials.map((testimonial, i) => (
                   <TestimonialCard
                     key={`${setIndex}-${i}`}
+                    {...testimonial}
+                  />
+                ))
+              ))}
+            </div>
+            <div aria-hidden="true" className="flex shrink-0 justify-around [gap:var(--gap)] animate-marquee flex-row group-hover:[animation-play-state:paused]">
+              {[...Array(4)].map((_, setIndex) => (
+                testimonials.map((testimonial, i) => (
+                  <TestimonialCard
+                    key={`duplicate-${setIndex}-${i}`}
                     {...testimonial}
                   />
                 ))

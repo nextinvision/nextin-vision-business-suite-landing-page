@@ -52,16 +52,19 @@
     from {
       transform: translateX(0);
     }
+
     to {
       transform: translateX(calc(-100% - var(--gap)));
     }
   }
+
   @keyframes marquee {
-  from {
-    transform: translateX(0);
+    from {
+      transform: translateX(0);
     }
-  to {
-    transform: translateX(calc(-100% - var(--gap)));
+
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
     }
   }
 }
@@ -142,20 +145,18 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
-
-    @layer base {
-
-      button:not(:disabled),
-      [role="button"]:not(:disabled) {
-        cursor: pointer;
-      }
-    }
   }
 
+  html,
   body {
-    @apply bg-black text-foreground font-sans overflow-x-hidden;
+    @apply text-foreground font-sans overflow-x-hidden;
     margin: 0;
     padding: 0;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
   }
 
   h1,
@@ -176,14 +177,5 @@
 
   .no-visible-scrollbar::-webkit-scrollbar {
     display: none !important;
-  }
-}
-
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
   }
 }

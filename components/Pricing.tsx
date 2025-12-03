@@ -71,7 +71,7 @@ const plans = [
 
 export default function Pricing() {
     return (
-        <section className="py-20 w-full max-w-7xl mx-auto px-4">
+        <section id="pricing" className="py-20 w-full max-w-7xl mx-auto px-4">
             <div className="text-center mb-16">
                 <BlurText
                     text="Simple, Transparent Pricing"
@@ -91,8 +91,8 @@ export default function Pricing() {
                     <div
                         key={index}
                         className={`relative p-8 rounded-2xl border backdrop-blur-sm transition-all duration-300 flex flex-col ${plan.popular
-                                ? "bg-white/10 border-blue-500/50 shadow-lg shadow-blue-500/10 scale-105 z-10"
-                                : "bg-white/5 border-white/10 hover:bg-white/10"
+                            ? "bg-white/10 border-blue-500/50 shadow-lg shadow-blue-500/10 scale-105 z-10"
+                            : "bg-white/5 border-white/10 hover:bg-white/10"
                             }`}
                     >
                         {plan.popular && (
@@ -128,8 +128,8 @@ export default function Pricing() {
 
                         <Button
                             className={`w-full py-6 text-base font-semibold ${plan.popular
-                                    ? "bg-blue-600 hover:bg-blue-700 text-white"
-                                    : "bg-white/10 hover:bg-white/20 text-white"
+                                ? "bg-blue-600 hover:bg-blue-700 text-white"
+                                : "bg-white/10 hover:bg-white/20 text-white"
                                 }`}
                         >
                             {plan.cta}
