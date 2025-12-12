@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import BlurText from "@/components/BlurText";
+import BlurText from "@/components/common/BlurText";
 import { UserPlus, Users, FolderPlus, BarChart2 } from "lucide-react";
 
 const steps = [
@@ -77,3 +77,4 @@ export default function HowItWorks() {
         </section>
     );
 }
+

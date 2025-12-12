@@ -1,18 +1,18 @@
-import BackgroundGradients from "@/components/Background";
-import Header from "@/components/Header";
-import ValueProposition from "@/components/ValueProposition";
-import TechnicalExcellence from "@/components/TechnicalExcellence";
-import UseCases from "@/components/UseCases";
-import FeaturesGrid from "@/components/FeaturesGrid";
-import FAQ from "@/components/FAQ";
-import Footer from "@/components/footer";
-import StickyNavbar from "@/components/StickyNavbar";
-import Benefits from "@/components/Benefits";
-import HowItWorks from "@/components/HowItWorks";
-import Integrations from "@/components/Integrations";
-import Pricing from "@/components/Pricing";
-import Testimonials from "@/components/Testimonials";
-import SocialProof from "@/components/SocialProof";
+import BackgroundGradients from "@/components/layout/Background";
+import Header from "@/components/layout/Header";
+import ValueProposition from "@/components/sections/ValueProposition";
+import TechnicalExcellence from "@/components/sections/TechnicalExcellence";
+import UseCases from "@/components/sections/UseCases";
+import FeaturesGrid from "@/components/sections/FeaturesGrid";
+import FAQ from "@/components/sections/FAQ";
+import Footer from "@/components/layout/Footer";
+import StickyNavbar from "@/components/layout/StickyNavbar";
+import Benefits from "@/components/sections/Benefits";
+import HowItWorks from "@/components/sections/HowItWorks";
+import Integrations from "@/components/sections/Integrations";
+import Pricing from "@/components/sections/Pricing";
+import Testimonials from "@/components/sections/Testimonials";
+import SocialProof from "@/components/sections/SocialProof";
 
 export default function Home() {
   return (

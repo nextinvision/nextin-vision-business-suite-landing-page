@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useState, useEffect } from 'react'
-import { NavigationMenuDemo } from "@/components/navbar"
+import { NavigationMenu } from "@/components/layout/Navbar"
 import { cn } from "@/lib/utils"
 
 export default function StickyNavbar() {
@@ -23,7 +23,8 @@ export default function StickyNavbar() {
                 scrolled ? "bg-black/50 backdrop-blur-md border-b border-white/10 py-2" : "bg-transparent"
             )}
         >
-            <NavigationMenuDemo />
+            <NavigationMenu />
         </div>
     )
 }
+

@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import BlurText from "@/components/BlurText";
+import BlurText from "@/components/common/BlurText";
 
 const stats = [
     { value: "X+", label: "Companies" },
@@ -45,3 +45,4 @@ export default function SocialProof() {
         </section>
     );
 }
+

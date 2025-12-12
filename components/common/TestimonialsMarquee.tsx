@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils"
 import { TestimonialCard, TestimonialAuthor } from "@/components/ui/testimonial-card"
-import BlurText from "@/components/BlurText"
-import ShinyText from "@/components/ShinyText"
+import BlurText from "@/components/common/BlurText"
+import ShinyText from "@/components/common/ShinyText"
 
 interface TestimonialsSectionProps {
   title: string
@@ -78,3 +78,4 @@ export function TestimonialsSection({
     </section>
   )
 }
+

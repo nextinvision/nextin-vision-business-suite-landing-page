@@ -1,7 +1,7 @@
-import BlurText from "@/components/BlurText"
-import ShinyText from '@/components/ShinyText';
+import BlurText from "@/components/common/BlurText"
+import ShinyText from '@/components/common/ShinyText';
 import { Button } from "@/components/ui/button";
-import AnimatedContent from '@/components/AnimatedContent';
+import AnimatedContent from '@/components/common/AnimatedContent';
 
 export default function Header() {
     return (
@@ -51,3 +51,4 @@ export default function Header() {
         </section>
     )
 }
+

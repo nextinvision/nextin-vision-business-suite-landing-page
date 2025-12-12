@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { TestimonialsSection } from "@/components/21st/testimonials-with-marquee";
+import { TestimonialsSection } from "@/components/common/TestimonialsMarquee";
 
 const testimonials = [
     {
@@ -51,3 +51,4 @@ export default function Testimonials() {
         />
     );
 }
+

@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import BlurText from "@/components/BlurText";
+import BlurText from "@/components/common/BlurText";
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 
@@ -145,3 +145,4 @@ export default function Pricing() {
         </section>
     );
 }
+

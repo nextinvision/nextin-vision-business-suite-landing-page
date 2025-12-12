@@ -1,7 +1,7 @@
 "use client";
 
-import BlurText from "@/components/BlurText";
-import { BentoGridShowcase } from "@/components/21st/bento-product-features";
+import BlurText from "@/components/common/BlurText";
+import { BentoGridShowcase } from "@/components/common/BentoGrid";
 import {
     Card,
     CardContent,
@@ -255,3 +255,4 @@ function BackendStackCard() {
         </Card>
     );
 }
+

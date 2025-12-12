@@ -9,7 +9,7 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel";
-import BlurText from "@/components/BlurText";
+import BlurText from "@/components/common/BlurText";
 import { Check } from "lucide-react";
 
 const useCases = [
@@ -143,3 +143,4 @@ export default function UseCases() {
         </section>
     );
 }
+

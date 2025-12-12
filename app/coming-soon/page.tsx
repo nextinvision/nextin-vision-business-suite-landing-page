@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import BlurText from "@/components/BlurText";
+import BlurText from "@/components/common/BlurText";
 
 export default function ComingSoon() {
     return (

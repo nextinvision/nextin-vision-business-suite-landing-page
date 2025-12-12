@@ -1,29 +1,6 @@
 import { Mail, Phone, MapPin } from "lucide-react";
 import { FaFacebook, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
-
-interface MenuItem {
-  title: string;
-  links: {
-    text: string;
-    url: string;
-  }[];
-}
-
-interface FooterProps {
-  logo?: {
-    url: string;
-    src?: string;
-    alt: string;
-    title: string;
-  };
-  tagline?: string;
-  menuItems?: MenuItem[];
-  copyright?: string;
-  bottomLinks?: {
-    text: string;
-    url: string;
-  }[];
-}
+import type { FooterProps } from "@/types/layout";
 
 const Footer = ({
   logo = {
@@ -56,9 +33,9 @@ const Footer = ({
     {
       title: "Company",
       links: [
-        { text: "About Us", url: "#" },
+        { text: "About Us", url: "/about" },
         { text: "Careers", url: "#" },
-        { text: "Contact", url: "#" },
+        { text: "Contact", url: "/contact" },
         { text: "Privacy Policy", url: "#" },
         { text: "Terms of Service", url: "#" },
       ],
@@ -153,3 +130,4 @@ const Footer = ({
 };
 
 export default Footer;
+

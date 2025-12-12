@@ -130,3 +130,4 @@ const BlurText: React.FC<BlurTextProps & { as?: React.ElementType }> = ({
 };
 
 export default BlurText;
+

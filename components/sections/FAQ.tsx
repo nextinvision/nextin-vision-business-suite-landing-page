@@ -5,7 +5,7 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion";
-import BlurText from "@/components/BlurText";
+import BlurText from "@/components/common/BlurText";
 
 export default function FAQ() {
     return (
@@ -111,3 +111,4 @@ export default function FAQ() {
         </div>
     );
 }
+

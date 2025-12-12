@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import BlurText from "@/components/BlurText";
+import BlurText from "@/components/common/BlurText";
 import {
     Mail,
     Calendar,
@@ -102,3 +102,4 @@ export default function Integrations() {
         </section>
     );
 }
+

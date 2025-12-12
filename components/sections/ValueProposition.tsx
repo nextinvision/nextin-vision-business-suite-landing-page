@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import { CheckCircle } from "lucide-react";
-import BlurText from "@/components/BlurText";
-import ShinyText from "@/components/ShinyText";
+import BlurText from "@/components/common/BlurText";
+import ShinyText from "@/components/common/ShinyText";
 
 export default function ValueProposition() {
     const [isExpanded, setIsExpanded] = useState(false);
@@ -68,3 +68,4 @@ export default function ValueProposition() {
         </section >
     );
 }
+
