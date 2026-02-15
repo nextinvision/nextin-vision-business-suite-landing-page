@@ -50,6 +50,7 @@ const benefits = [
             "Support for unlimited companies",
             "Horizontal scaling",
             "Custom database per company",
+            "Custom domain integration for brand authenticity",
             "Feature flags and customizations",
             "API-ready for integrations",
         ],

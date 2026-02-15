@@ -11,12 +11,10 @@ import {
 } from "@/components/ui/card";
 import {
     Database,
-    Shield,
     Server,
     Zap,
     Code,
     Layers,
-    Lock,
     Globe,
     Cpu,
 } from "lucide-react";
@@ -44,7 +42,7 @@ export default function TechnicalExcellence() {
                 statistic={<ScalableStorageCard />}
                 focus={<FrontendStackCard />}
                 productivity={<BackendStackCard />}
-                shortcuts={<SecurityCard />}
+                shortcuts={<CustomDomainCard />}
             />
         </section>
     );
@@ -113,54 +111,6 @@ function MultiTenantCard() {
                             Our multi-tenant architecture ensures that each company&apos;s data is completely isolated, whether using shared or dedicated databases. This design allows for seamless scaling while maintaining the highest levels of security and performance.
                         </p>
                     </div>
-                </div>
-            </CardContent>
-        </Card>
-    );
-}
-
-function SecurityCard() {
-    return (
-        <Card className="h-full bg-white/5 border-white/10 backdrop-blur-sm hover:bg-white/10 transition-colors">
-            <CardHeader>
-                <div className="w-10 h-10 rounded-lg bg-green-500/20 flex items-center justify-center mb-2">
-                    <Shield className="w-5 h-5 text-green-400" />
-                </div>
-                <CardTitle className="text-white text-lg md:text-xl font-extrabold tracking-tight">Security First</CardTitle>
-                <CardDescription className="text-neutral-200 text-base font-semibold tracking-wide">
-                    Your Data is Protected
-                </CardDescription>
-            </CardHeader>
-            <CardContent>
-                <div className="grid md:grid-cols-2 gap-4">
-                    <ul className="space-y-3 text-sm md:text-base text-neutral-200 leading-relaxed tracking-wide font-light">
-                        <li className="flex items-center gap-2">
-                            <Lock className="w-4 h-4 text-green-500" />
-                            JWT-based auth with HTTP-only cookies
-                        </li>
-                        <li className="flex items-center gap-2">
-                            <Lock className="w-4 h-4 text-green-500" />
-                            Role-based access control (RBAC)
-                        </li>
-                        <li className="flex items-center gap-2">
-                            <Lock className="w-4 h-4 text-green-500" />
-                            Encrypted database connections
-                        </li>
-                    </ul>
-                    <ul className="space-y-3 text-sm md:text-base text-neutral-200 leading-relaxed tracking-wide font-light">
-                        <li className="flex items-center gap-2">
-                            <Lock className="w-4 h-4 text-green-500" />
-                            Rate limiting on API routes
-                        </li>
-                        <li className="flex items-center gap-2">
-                            <Lock className="w-4 h-4 text-green-500" />
-                            Input validation and sanitization
-                        </li>
-                        <li className="flex items-center gap-2">
-                            <Lock className="w-4 h-4 text-green-500" />
-                            Comprehensive audit trails
-                        </li>
-                    </ul>
                 </div>
             </CardContent>
         </Card>
@@ -284,6 +234,72 @@ function BackendStackCard() {
                         Tailwind CSS: Utility-first styling
                     </li>
                 </ul>
+            </CardContent>
+        </Card>
+    );
+}
+
+function CustomDomainCard() {
+    return (
+        <Card className="h-full bg-white/5 border-white/10 backdrop-blur-sm hover:bg-white/10 hover:border-white/20 transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/30">
+            <CardHeader>
+                <div className="w-12 h-12 rounded-xl bg-[#F16822]/20 flex items-center justify-center mb-3 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
+                    <Globe className="w-6 h-6 text-[#F16822] group-hover:text-[#005B82] transition-colors duration-300" />
+                </div>
+                <CardTitle className="text-white text-xl md:text-2xl lg:text-3xl mb-2 font-extrabold tracking-tight leading-tight">Custom Domain Integration</CardTitle>
+                <CardDescription className="text-neutral-200 text-base md:text-lg mb-4 font-semibold tracking-wide leading-relaxed">
+                    Maintain Brand Authenticity & Professional Identity
+                </CardDescription>
+            </CardHeader>
+            <CardContent>
+                <div className="space-y-4">
+                    <div>
+                        <h4 className="text-white font-bold text-sm md:text-base mb-3 uppercase tracking-[0.15em] letter-spacing-widest">Key Features</h4>
+                        <ul className="space-y-3 text-sm md:text-base lg:text-lg text-neutral-200 leading-relaxed tracking-wide font-light">
+                            <li className="flex items-start gap-3">
+                                <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                                Use your own company domain (e.g., app.yourcompany.com) instead of the default workspace URL
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                                Maintain complete brand consistency across all touchpoints
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                                Enhanced professional credibility with branded access URLs
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                                SSL certificate management and secure domain routing
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div className="pt-4 border-t border-white/10">
+                        <h4 className="text-white font-bold text-sm md:text-base mb-3 uppercase tracking-[0.15em] letter-spacing-widest">Benefits</h4>
+                        <ul className="space-y-2 text-sm md:text-base lg:text-lg text-neutral-200 leading-relaxed tracking-wide font-light">
+                            <li className="flex items-start gap-3">
+                                <span className="mt-1.5 w-2 h-2 rounded-full bg-[#005B82] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                                <span className="font-semibold text-white">Brand Authenticity:</span> Your team and clients access the platform through your own domain, reinforcing your brand identity.
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <span className="mt-1.5 w-2 h-2 rounded-full bg-[#005B82] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                                <span className="font-semibold text-white">Professional Image:</span> Custom domains project a more professional and established business presence.
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <span className="mt-1.5 w-2 h-2 rounded-full bg-[#005B82] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                                <span className="font-semibold text-white">Trust & Credibility:</span> Clients and partners see your domain, building trust and confidence in your platform.
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <span className="mt-1.5 w-2 h-2 rounded-full bg-[#005B82] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                                <span className="font-semibold text-white">Seamless Integration:</span> Works seamlessly with your existing IT infrastructure and domain management.
+                            </li>
+                        </ul>
+                    </div>
+                    <p className="text-xs md:text-sm lg:text-base text-neutral-300 italic leading-relaxed tracking-wide font-light">
+                        Our custom domain integration allows enterprise customers to use their own company domain, ensuring that the platform feels like a native part of their business infrastructure while maintaining complete brand authenticity and professional identity.
+                    </p>
+                </div>
             </CardContent>
         </Card>
     );

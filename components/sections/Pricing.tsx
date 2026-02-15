@@ -55,7 +55,7 @@ const plans = [
             "Unlimited team members",
             "Unlimited everything",
             "Dedicated database",
-            "Custom domain",
+            "Custom company domain integration (maintain brand authenticity)",
             "Advanced customizations",
             "Feature flags",
             "API access",

@@ -38,64 +38,72 @@ export default function FAQ() {
                         </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-2" className="border-b border-white/10">
-                        <AccordionTrigger className="text-slate-100 hover:no-underline hover:text-white">Can I use my own database?</AccordionTrigger>
-                        <AccordionContent className="flex flex-col gap-4 text-balance text-slate-300">
+                        <AccordionTrigger className="text-white hover:no-underline hover:text-white font-bold text-base md:text-lg lg:text-xl py-6 tracking-wide">Can I use my own database?</AccordionTrigger>
+                        <AccordionContent className="flex flex-col gap-4 text-balance text-neutral-200 leading-relaxed tracking-wide font-light text-base md:text-lg">
                             <p>
                                 Yes! Enterprise plans support custom database configuration. You can connect your own MongoDB instance for complete data control and compliance requirements.
                             </p>
                         </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-3" className="border-b border-white/10">
-                        <AccordionTrigger className="text-slate-100 hover:no-underline hover:text-white">How many team members can I have?</AccordionTrigger>
-                        <AccordionContent className="flex flex-col gap-4 text-balance text-slate-300">
+                        <AccordionTrigger className="text-white hover:no-underline hover:text-white font-bold text-base md:text-lg lg:text-xl py-6 tracking-wide">How many team members can I have?</AccordionTrigger>
+                        <AccordionContent className="flex flex-col gap-4 text-balance text-neutral-200 leading-relaxed tracking-wide font-light text-base md:text-lg">
                             <p>
                                 It depends on your plan. Starter plans support up to 10 members, Professional up to 50, and Enterprise has unlimited members. Contact us for custom requirements.
                             </p>
                         </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-4" className="border-b border-white/10">
-                        <AccordionTrigger className="text-slate-100 hover:no-underline hover:text-white">Can I customize the platform for my company?</AccordionTrigger>
-                        <AccordionContent className="flex flex-col gap-4 text-balance text-slate-300">
+                        <AccordionTrigger className="text-white hover:no-underline hover:text-white font-bold text-base md:text-lg lg:text-xl py-6 tracking-wide">Can I customize the platform for my company?</AccordionTrigger>
+                        <AccordionContent className="flex flex-col gap-4 text-balance text-neutral-200 leading-relaxed tracking-wide font-light text-base md:text-lg">
                             <p>
                                 Yes! You can customize branding (favicon, site title), configure page access per role, and Enterprise plans include advanced customizations like feature flags and custom components.
                             </p>
                         </AccordionContent>
                     </AccordionItem>
+                    <AccordionItem value="item-4b" className="border-b border-white/10">
+                        <AccordionTrigger className="text-white hover:no-underline hover:text-white font-bold text-base md:text-lg lg:text-xl py-6 tracking-wide">Can I use my own company domain?</AccordionTrigger>
+                        <AccordionContent className="flex flex-col gap-4 text-balance text-neutral-200 leading-relaxed tracking-wide font-light text-base md:text-lg">
+                            <p>
+                                Yes! Enterprise plans support custom company domain integration. You can use your own domain (e.g., app.yourcompany.com) instead of the default workspace URL. This maintains your brand authenticity, enhances professional credibility, and provides a seamless branded experience for your team and clients. Our team will assist with domain configuration and SSL certificate setup.
+                            </p>
+                        </AccordionContent>
+                    </AccordionItem>
                     <AccordionItem value="item-5" className="border-b border-white/10">
-                        <AccordionTrigger className="text-slate-100 hover:no-underline hover:text-white">Do you offer a free trial?</AccordionTrigger>
-                        <AccordionContent className="flex flex-col gap-4 text-balance text-slate-300">
+                        <AccordionTrigger className="text-white hover:no-underline hover:text-white font-bold text-base md:text-lg lg:text-xl py-6 tracking-wide">Do you offer a free trial?</AccordionTrigger>
+                        <AccordionContent className="flex flex-col gap-4 text-balance text-neutral-200 leading-relaxed tracking-wide font-light text-base md:text-lg">
                             <p>
                                 Yes, we offer a 14-day free trial with full access to all features. No credit card required.
                             </p>
                         </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-6" className="border-b border-white/10">
-                        <AccordionTrigger className="text-slate-100 hover:no-underline hover:text-white">Can I export my data?</AccordionTrigger>
-                        <AccordionContent className="flex flex-col gap-4 text-balance text-slate-300">
+                        <AccordionTrigger className="text-white hover:no-underline hover:text-white font-bold text-base md:text-lg lg:text-xl py-6 tracking-wide">Can I export my data?</AccordionTrigger>
+                        <AccordionContent className="flex flex-col gap-4 text-balance text-neutral-200 leading-relaxed tracking-wide font-light text-base md:text-lg">
                             <p>
                                 Yes, you can export data in various formats. Reports can be exported to Excel/CSV, and invoices can be downloaded as PDFs.
                             </p>
                         </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-7" className="border-b border-white/10">
-                        <AccordionTrigger className="text-slate-100 hover:no-underline hover:text-white">Is there a mobile app?</AccordionTrigger>
-                        <AccordionContent className="flex flex-col gap-4 text-balance text-slate-300">
+                        <AccordionTrigger className="text-white hover:no-underline hover:text-white font-bold text-base md:text-lg lg:text-xl py-6 tracking-wide">Is there a mobile app?</AccordionTrigger>
+                        <AccordionContent className="flex flex-col gap-4 text-balance text-neutral-200 leading-relaxed tracking-wide font-light text-base md:text-lg">
                             <p>
                                 The platform is fully responsive and works great on mobile browsers. A native mobile app is planned for future releases.
                             </p>
                         </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-8" className="border-b border-white/10">
-                        <AccordionTrigger className="text-slate-100 hover:no-underline hover:text-white">What kind of support do you offer?</AccordionTrigger>
-                        <AccordionContent className="flex flex-col gap-4 text-balance text-slate-300">
+                        <AccordionTrigger className="text-white hover:no-underline hover:text-white font-bold text-base md:text-lg lg:text-xl py-6 tracking-wide">What kind of support do you offer?</AccordionTrigger>
+                        <AccordionContent className="flex flex-col gap-4 text-balance text-neutral-200 leading-relaxed tracking-wide font-light text-base md:text-lg">
                             <p>
                                 We offer email support for all plans, priority support for Professional plans, and dedicated support with SLA for Enterprise plans.
                             </p>
                         </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-9" className="border-b border-white/10">
-                        <AccordionTrigger className="text-slate-100 hover:no-underline hover:text-white">Can I integrate with other tools?</AccordionTrigger>
-                        <AccordionContent className="flex flex-col gap-4 text-balance text-slate-300">
+                        <AccordionTrigger className="text-white hover:no-underline hover:text-white font-bold text-base md:text-lg lg:text-xl py-6 tracking-wide">Can I integrate with other tools?</AccordionTrigger>
+                        <AccordionContent className="flex flex-col gap-4 text-balance text-neutral-200 leading-relaxed tracking-wide font-light text-base md:text-lg">
                             <p>
                                 Enterprise plans include API access for custom integrations. We&apos;re also working on pre-built integrations with popular tools (coming soon).
                             </p>

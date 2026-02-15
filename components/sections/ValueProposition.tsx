@@ -45,7 +45,8 @@ export default function ValueProposition() {
                         "Complete Business Suite: Project management, CRM, invoicing, HR, and more",
                         "Enterprise-Grade Security: Multi-tenant architecture with complete data isolation",
                         "Scalable Infrastructure: Built to grow with your business, from startup to enterprise",
-                        "Customizable: Tailor the platform to your company's unique needs",
+                        "Custom Domain Integration: Use your own company domain to maintain brand authenticity and professional identity",
+                        "Customizable: Tailor the platform to your company's unique needs with branding, domain, and feature customization",
                         "Real-Time Collaboration: Stay connected with your team through instant notifications",
                     ].map((item, index) => (
                         <div

@@ -73,6 +73,18 @@ const useCases = [
             "Expense categorization",
         ],
     },
+    {
+        title: "Enterprise Organizations",
+        headline: "White-Label Solution with Custom Domain",
+        description:
+            "Ideal for large enterprises requiring complete brand control and professional identity. Integrate your custom company domain to maintain brand authenticity, enhance credibility, and provide a seamless branded experience for your team and clients.",
+        benefits: [
+            "Custom company domain integration",
+            "Complete brand authenticity",
+            "Enhanced professional credibility",
+            "White-label capabilities",
+        ],
+    },
 ];
 
 export default function UseCases() {

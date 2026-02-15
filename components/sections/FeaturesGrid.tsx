@@ -104,7 +104,7 @@ const features = [
         title: "Customization & Branding",
         headline: "Make It Yours",
         description:
-            "Customize the platform to match your brand. Upload your favicon, set custom site titles, and configure page access based on roles.",
+            "Customize the platform to match your brand. Upload your favicon, set custom site titles, configure page access based on roles, and integrate your custom company domain to maintain complete brand authenticity and professional identity.",
         icon: Settings,
         color: "text-gray-400",
         bg: "bg-gray-500/20",

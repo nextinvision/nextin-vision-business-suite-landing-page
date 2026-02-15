@@ -48,7 +48,7 @@ export default function AboutPage() {
                 delay={50}
               />
               <ShinyText
-                text="Founded with a vision to revolutionize business management, Nextin Project Management was born from the frustration of juggling multiple tools and platforms. We recognized that businesses needed a unified solution that could scale with their growth while maintaining enterprise-grade security."
+                text="Founded with a vision to revolutionize business management, Nextin Workspace was born from the frustration of juggling multiple tools and platforms. We recognized that businesses needed a unified solution that could scale with their growth while maintaining enterprise-grade security and brand authenticity through features like custom domain integration."
                 disabled={false}
                 speed={3}
                 className="text-base md:text-lg lg:text-xl text-neutral-200 leading-relaxed tracking-wide font-light"
