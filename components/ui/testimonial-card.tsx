@@ -39,15 +39,15 @@ export function TestimonialCard({
           <AvatarImage src={author.avatar} alt={author.name} />
         </Avatar>
         <div className="flex flex-col items-start">
-          <h3 className="text-lg font-bold leading-none text-white">
+          <h3 className="text-lg md:text-xl font-extrabold leading-tight text-white tracking-tight">
             {author.name}
           </h3>
-          <p className="text-sm text-[#005B82] font-medium mt-1">
+          <p className="text-sm md:text-base text-[#005B82] font-bold mt-1 tracking-wide">
             {author.handle}
           </p>
         </div>
       </div>
-      <p className="sm:text-lg mt-4 text-neutral-300 leading-relaxed italic">
+      <p className="sm:text-lg md:text-xl mt-4 text-neutral-200 leading-relaxed italic tracking-wide font-light">
         &quot;{text}&quot;
       </p>
     </Card>

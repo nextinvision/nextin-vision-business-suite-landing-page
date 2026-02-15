@@ -81,7 +81,7 @@ export default function Pricing() {
                     direction="top"
                     as="h2"
                 />
-                <p className="mt-4 text-neutral-400 max-w-2xl mx-auto">
+                <p className="mt-4 text-neutral-300 max-w-2xl mx-auto text-base md:text-lg leading-relaxed tracking-wide font-light">
                     Choose the plan that fits your business needs. No hidden fees.
                 </p>
             </div>
@@ -97,30 +97,30 @@ export default function Pricing() {
                         }`}
                     >
                         {plan.popular && (
-                            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-[#F16822] to-[#D85A1A] text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider shadow-lg shadow-[#F16822]/30">
+                            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-[#F16822] to-[#D85A1A] text-white text-xs font-extrabold px-4 py-1.5 rounded-full uppercase tracking-[0.2em] letter-spacing-widest shadow-lg shadow-[#F16822]/30">
                                 Most Popular
                             </div>
                         )}
                         <div className="mb-8">
-                            <h3 className="text-2xl md:text-3xl font-bold text-white mb-2 group-hover:text-white transition-colors">
+                            <h3 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-white mb-2 group-hover:text-white transition-colors tracking-tight leading-tight">
                                 {plan.name}
                             </h3>
-                            <p className="text-sm md:text-base text-neutral-300 mb-6 font-medium">
+                            <p className="text-sm md:text-base text-neutral-300 mb-6 font-semibold tracking-wide leading-relaxed">
                                 {plan.description}
                             </p>
                             <div className="flex items-baseline gap-2 mb-2">
-                                <span className="text-5xl md:text-6xl font-bold bg-gradient-to-br from-white to-white/80 bg-clip-text text-transparent">
+                                <span className="text-5xl md:text-6xl lg:text-7xl font-black bg-gradient-to-br from-white via-white to-white/85 bg-clip-text text-transparent tracking-tight leading-none">
                                     {plan.price}
                                 </span>
-                                <span className="text-neutral-400 text-lg">{plan.period}</span>
+                                <span className="text-neutral-400 text-lg md:text-xl font-medium tracking-wide">{plan.period}</span>
                             </div>
                         </div>
 
                         <div className="flex-1 mb-8">
                             <ul className="space-y-3">
                                 {plan.features.map((feature, idx) => (
-                                    <li key={idx} className="flex items-start gap-3 text-sm text-neutral-300">
-                                        <Check className="w-4 h-4 text-[#F16822] mt-0.5 shrink-0" />
+                                    <li key={idx} className="flex items-start gap-3 text-sm md:text-base text-neutral-300 leading-relaxed tracking-wide font-normal">
+                                        <Check className="w-4 h-4 md:w-5 md:h-5 text-[#F16822] mt-0.5 shrink-0" />
                                         {feature}
                                     </li>
                                 ))}
@@ -140,7 +140,7 @@ export default function Pricing() {
                 ))}
             </div>
 
-            <div className="mt-12 text-center text-sm text-neutral-500 space-y-2">
+            <div className="mt-12 text-center text-sm md:text-base text-neutral-400 space-y-2 leading-relaxed tracking-wide font-light">
                 <p>All plans include: Project management, Task management, Calendar, File management</p>
                 <p>Free trial: 14 days (no credit card required) • Annual billing: Save 20%</p>
             </div>

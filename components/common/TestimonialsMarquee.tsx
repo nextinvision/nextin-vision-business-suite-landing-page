@@ -30,7 +30,7 @@ export function TestimonialsSection({
         <div className="flex flex-col items-center gap-4 px-4 sm:gap-8">
           <BlurText
             text={title}
-            className="text-3xl md:text-5xl text-white justify-center font-heading"
+            className="text-3xl md:text-5xl lg:text-6xl text-white justify-center font-heading font-extrabold tracking-tight leading-tight"
             delay={150}
             animateBy="words"
             direction="top"
@@ -40,7 +40,7 @@ export function TestimonialsSection({
             text={description}
             disabled={false}
             speed={3}
-            className="text-md max-w-[600px] font-medium sm:text-xl"
+            className="text-base md:text-lg lg:text-xl max-w-[600px] font-light sm:text-xl leading-relaxed tracking-wide"
           />
         </div>
 

@@ -25,14 +25,14 @@ export default function AboutPage() {
             >
               <BlurText
                 text="About Nextin Project Management"
-                className="text-4xl md:text-6xl text-white justify-center font-heading mb-4"
+                className="text-4xl md:text-6xl lg:text-7xl text-white justify-center font-heading font-extrabold tracking-tight leading-tight mb-4"
                 delay={100}
               />
               <ShinyText
                 text="Empowering businesses worldwide with comprehensive, secure, and scalable project management solutions. We're on a mission to simplify how teams work together."
                 disabled={false}
                 speed={3}
-                className="text-lg md:text-xl max-w-3xl mx-auto text-neutral-300"
+                className="text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto text-neutral-200 leading-relaxed tracking-wide font-light"
               />
             </AnimatedContent>
           </div>
@@ -44,16 +44,16 @@ export default function AboutPage() {
             <div className="space-y-6">
               <BlurText
                 text="Our Story"
-                className="text-3xl md:text-5xl text-white font-heading"
+                className="text-3xl md:text-5xl lg:text-6xl text-white font-heading font-extrabold tracking-tight leading-tight"
                 delay={50}
               />
               <ShinyText
                 text="Founded with a vision to revolutionize business management, Nextin Project Management was born from the frustration of juggling multiple tools and platforms. We recognized that businesses needed a unified solution that could scale with their growth while maintaining enterprise-grade security."
                 disabled={false}
                 speed={3}
-                className="text-base md:text-lg text-neutral-300 leading-relaxed"
+                className="text-base md:text-lg lg:text-xl text-neutral-200 leading-relaxed tracking-wide font-light"
               />
-              <p className="text-neutral-400 leading-relaxed">
+              <p className="text-neutral-300 leading-relaxed tracking-wide font-light text-base md:text-lg">
                 Today, we serve businesses of all sizes—from startups to enterprise organizations—helping them streamline operations, improve collaboration, and achieve their goals more efficiently. Our platform combines the power of project management, CRM, invoicing, HR, and more into one seamless experience.
               </p>
             </div>
@@ -64,8 +64,8 @@ export default function AboutPage() {
                     <Rocket className="w-6 h-6 text-[#005B82]" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-white">2020</h3>
-                    <p className="text-neutral-400 text-sm">Founded</p>
+                    <h3 className="text-xl md:text-2xl font-extrabold text-white tracking-tight">2020</h3>
+                    <p className="text-neutral-300 text-sm md:text-base font-semibold tracking-wide uppercase">Founded</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
@@ -106,10 +106,10 @@ export default function AboutPage() {
                 <div className="w-12 h-12 rounded-lg bg-[#005B82]/20 flex items-center justify-center mb-4">
                   <Target className="w-6 h-6 text-[#005B82]" />
                 </div>
-                <CardTitle className="text-2xl text-white">Our Mission</CardTitle>
+                <CardTitle className="text-2xl md:text-3xl text-white font-extrabold tracking-tight">Our Mission</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-neutral-300 leading-relaxed">
+                <p className="text-neutral-200 leading-relaxed tracking-wide font-light text-base md:text-lg">
                   To empower businesses of all sizes with powerful, intuitive, and secure project management tools that enable them to work smarter, collaborate better, and achieve their goals faster. We believe that every business deserves access to enterprise-grade solutions without the complexity.
                 </p>
               </CardContent>
@@ -122,7 +122,7 @@ export default function AboutPage() {
                 <CardTitle className="text-2xl text-white">Our Vision</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-neutral-300 leading-relaxed">
+                <p className="text-neutral-200 leading-relaxed tracking-wide font-light text-base md:text-lg">
                   To become the world&apos;s most trusted and comprehensive business management platform, where teams can manage every aspect of their operations in one place. We envision a future where businesses can focus on what they do best, while we handle the complexity of project management, collaboration, and operations.
                 </p>
               </CardContent>
@@ -138,7 +138,7 @@ export default function AboutPage() {
               className="text-3xl md:text-5xl text-white justify-center font-heading"
               delay={150}
             />
-            <p className="mt-4 text-neutral-400 max-w-2xl mx-auto">
+            <p className="mt-4 text-neutral-300 max-w-2xl mx-auto text-base md:text-lg leading-relaxed tracking-wide font-light">
               The principles that guide everything we do
             </p>
           </div>
@@ -195,10 +195,10 @@ export default function AboutPage() {
                   <div className={`w-12 h-12 rounded-lg flex items-center justify-center mb-4 ${value.bg}`}>
                     <value.icon className={`w-6 h-6 ${value.color}`} />
                   </div>
-                  <CardTitle className="text-xl text-white">{value.title}</CardTitle>
+                  <CardTitle className="text-xl md:text-2xl text-white font-extrabold tracking-tight">{value.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-neutral-400 leading-relaxed">{value.description}</p>
+                  <p className="text-neutral-200 leading-relaxed tracking-wide font-light text-base md:text-lg">{value.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -213,7 +213,7 @@ export default function AboutPage() {
               className="text-3xl md:text-5xl text-white justify-center font-heading"
               delay={150}
             />
-            <p className="mt-4 text-neutral-400 max-w-2xl mx-auto">
+            <p className="mt-4 text-neutral-300 max-w-2xl mx-auto text-base md:text-lg leading-relaxed tracking-wide font-light">
               We leverage the latest technologies to deliver a fast, secure, and scalable platform
             </p>
           </div>
@@ -232,8 +232,8 @@ export default function AboutPage() {
                 key={index}
                 className="p-6 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 transition-colors text-center"
               >
-                <h3 className="text-lg font-bold text-white mb-2">{tech.name}</h3>
-                <p className="text-sm text-neutral-400">{tech.description}</p>
+                <h3 className="text-lg md:text-xl font-extrabold text-white mb-2 tracking-tight">{tech.name}</h3>
+                <p className="text-sm md:text-base text-neutral-200 tracking-wide font-light">{tech.description}</p>
               </div>
             ))}
           </div>
@@ -256,7 +256,7 @@ export default function AboutPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contact"
-                className="px-8 py-3 bg-[#F16822] hover:bg-[#D85A1A] text-white rounded-lg font-semibold transition-colors inline-block text-center"
+                className="px-8 py-3 bg-[#F16822] hover:bg-[#D85A1A] text-white rounded-lg font-bold tracking-wide uppercase transition-colors inline-block text-center text-base md:text-lg"
               >
                 Get in Touch
               </Link>

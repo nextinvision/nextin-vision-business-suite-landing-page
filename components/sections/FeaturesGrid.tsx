@@ -140,13 +140,13 @@ export default function FeaturesGrid() {
                             <feature.icon className={`w-7 h-7 ${feature.color} group-hover:scale-110 transition-transform duration-300`} />
                         </div>
                         <div>
-                            <h3 className="text-xl md:text-2xl font-bold text-white mb-2 group-hover:text-white transition-colors">
+                            <h3 className="text-xl md:text-2xl lg:text-3xl font-extrabold text-white mb-2 group-hover:text-white transition-colors tracking-tight leading-tight">
                                 {feature.headline}
                             </h3>
-                            <p className="text-xs md:text-sm text-[#F16822] font-semibold mb-4 uppercase tracking-widest">
+                            <p className="text-xs md:text-sm text-[#F16822] font-bold mb-4 uppercase tracking-[0.2em] letter-spacing-widest">
                                 {feature.title}
                             </p>
-                            <p className="text-neutral-300 text-sm md:text-base leading-relaxed mb-6 text-justify">
+                            <p className="text-neutral-200 text-sm md:text-base lg:text-lg leading-relaxed mb-6 text-justify tracking-wide font-light">
                                 {feature.description}
                             </p>
                         </div>

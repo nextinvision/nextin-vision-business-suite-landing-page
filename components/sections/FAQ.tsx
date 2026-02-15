@@ -14,11 +14,11 @@ export default function FAQ() {
                 <div>
                     <BlurText
                         text="Frequently Asked Questions"
-                        className="text-3xl md:text-5xl text-white font-heading mb-4"
+                        className="text-3xl md:text-5xl lg:text-6xl text-white font-heading font-extrabold mb-4 tracking-tight leading-tight"
                         delay={50}
                     />
-                    <p className="text-neutral-300 text-sm md:text-base leading-relaxed">
-                        Everything you need to know about Nextin Workspace. Can't find the answer you're looking for? Please contact our support team.
+                    <p className="text-neutral-200 text-sm md:text-base lg:text-lg leading-relaxed tracking-wide font-light">
+                        Everything you need to know about Nextin Workspace. Can&apos;t find the answer you&apos;re looking for? Please contact our support team.
                     </p>
                 </div>
             </div>
@@ -30,8 +30,8 @@ export default function FAQ() {
                     defaultValue="item-1"
                 >
                     <AccordionItem value="item-1" className="border-b border-white/10">
-                        <AccordionTrigger className="text-white hover:no-underline hover:text-white font-semibold text-base md:text-lg py-6">Is my data secure?</AccordionTrigger>
-                        <AccordionContent className="flex flex-col gap-4 text-balance text-neutral-300 leading-relaxed">
+                        <AccordionTrigger className="text-white hover:no-underline hover:text-white font-bold text-base md:text-lg lg:text-xl py-6 tracking-wide">Is my data secure?</AccordionTrigger>
+                        <AccordionContent className="flex flex-col gap-4 text-balance text-neutral-200 leading-relaxed tracking-wide font-light text-base md:text-lg">
                             <p>
                                 Yes, absolutely. Nextin uses enterprise-grade security with complete data isolation between companies. You can optionally configure your own dedicated database for maximum security. All connections are encrypted, and we follow industry best practices for data protection.
                             </p>

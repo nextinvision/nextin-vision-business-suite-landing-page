@@ -41,13 +41,13 @@ export default function StickyNavbar() {
                     {/* Text-based logo with brand colors */}
                     <div className="flex items-center gap-1">
                         <span 
-                            className="text-xl md:text-2xl font-bold font-heading transition-colors group-hover:opacity-90"
+                            className="text-xl md:text-2xl lg:text-3xl font-extrabold font-heading transition-colors group-hover:opacity-90 tracking-tight leading-none"
                             style={{ color: COLORS.NEXTIN_ORANGE }}
                         >
                             NEXTIN
                         </span>
                         <span 
-                            className="text-xl md:text-2xl font-bold font-heading transition-colors group-hover:opacity-90"
+                            className="text-xl md:text-2xl lg:text-3xl font-extrabold font-heading transition-colors group-hover:opacity-90 tracking-tight leading-none"
                             style={{ color: COLORS.WORKSPACE_BLUE }}
                         >
                             WORKSPACE

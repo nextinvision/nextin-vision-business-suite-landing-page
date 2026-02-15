@@ -8,13 +8,13 @@ export default function Header() {
         <section className="relative z-10">
             <div className="w-full min-h-screen flex flex-col pt-24 md:pt-32">
                 <div className="flex flex-col items-center justify-center w-full px-4 text-center flex-1">
-                    <BlurText className="text-white text-4xl md:text-6xl mb-2 justify-center font-heading" text="All-in-One" />
-                    <BlurText className="text-white text-4xl md:text-6xl mb-4 justify-center font-heading" text="Business Management Platform" />
+                    <BlurText className="text-white text-4xl md:text-6xl lg:text-7xl mb-2 justify-center font-heading font-bold tracking-tight leading-[1.1]" text="All-in-One" />
+                    <BlurText className="text-white text-4xl md:text-6xl lg:text-7xl mb-4 justify-center font-heading font-bold tracking-tight leading-[1.1]" text="Business Management Platform" />
                     <ShinyText
                         text="Streamline your projects, manage your team, track finances, and grow your business—all from one powerful platform. Built for teams that demand efficiency, security, and scalability."
                         disabled={false}
                         speed={3}
-                        className='custom-class text-sm md:text-base max-w-2xl'
+                        className='custom-class text-base md:text-lg lg:text-xl max-w-2xl leading-relaxed tracking-wide font-light'
                     />
                     <div className="flex items-center justify-center mt-8 mb-12">
                         <AnimatedContent
@@ -30,10 +30,10 @@ export default function Header() {
                             delay={0.2}
                             className="flex items-center gap-8"
                         >
-                            <Button className="bg-gradient-to-r from-[#F16822] to-[#D85A1A] hover:from-[#D85A1A] hover:to-[#F16822] text-white border-none shadow-lg shadow-[#F16822]/30 hover:shadow-xl hover:shadow-[#F16822]/40 hover:scale-105 transition-all duration-300 px-8 py-6 text-base font-semibold">
+                            <Button className="bg-gradient-to-r from-[#F16822] to-[#D85A1A] hover:from-[#D85A1A] hover:to-[#F16822] text-white border-none shadow-lg shadow-[#F16822]/30 hover:shadow-xl hover:shadow-[#F16822]/40 hover:scale-105 transition-all duration-300 px-8 py-6 text-base md:text-lg font-semibold tracking-wide uppercase letter-spacing-wider">
                                 Start Free Trial
                             </Button>
-                            <Button variant="outline" className="bg-transparent text-white border-2 border-white/20 hover:bg-white/10 hover:border-white/30 hover:text-white transition-all duration-300 px-8 py-6 text-base font-semibold hover:scale-105">
+                            <Button variant="outline" className="bg-transparent text-white border-2 border-white/20 hover:bg-white/10 hover:border-white/30 hover:text-white transition-all duration-300 px-8 py-6 text-base md:text-lg font-semibold tracking-wide uppercase hover:scale-105">
                                 Watch Demo
                             </Button>
                         </AnimatedContent>

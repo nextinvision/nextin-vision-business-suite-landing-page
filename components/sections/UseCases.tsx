@@ -103,26 +103,26 @@ export default function UseCases() {
                                 <div className="p-1 h-full">
                                     <Card className="h-full bg-white/5 border-white/10 backdrop-blur-sm hover:bg-white/10 hover:border-white/20 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-black/30 flex flex-col">
                                         <CardHeader>
-                                            <CardTitle className="text-white text-xl md:text-2xl mb-3">
+                                            <CardTitle className="text-white text-xl md:text-2xl lg:text-3xl mb-3 font-extrabold tracking-tight leading-tight">
                                                 {useCase.title}
                                             </CardTitle>
-                                            <CardDescription className="text-neutral-200 font-semibold text-base md:text-lg">
+                                            <CardDescription className="text-neutral-200 font-bold text-base md:text-lg lg:text-xl tracking-wide leading-relaxed">
                                                 {useCase.headline}
                                             </CardDescription>
                                         </CardHeader>
                                         <CardContent className="flex-1 flex flex-col justify-between gap-6">
-                                            <p className="text-neutral-300 text-sm md:text-base leading-relaxed text-justify">
+                                            <p className="text-neutral-200 text-sm md:text-base lg:text-lg leading-relaxed text-justify tracking-wide font-light">
                                                 {useCase.description}
                                             </p>
                                             <div>
-                                                <h4 className="text-white text-sm md:text-base font-bold mb-4">
+                                                <h4 className="text-white text-sm md:text-base lg:text-lg font-extrabold mb-4 tracking-wide uppercase">
                                                     Key Benefits:
                                                 </h4>
                                                 <ul className="space-y-3">
                                                     {useCase.benefits.map((benefit, idx) => (
                                                         <li
                                                             key={idx}
-                                                            className="flex items-start gap-3 text-sm md:text-base text-neutral-300"
+                                                            className="flex items-start gap-3 text-sm md:text-base text-neutral-200 leading-relaxed tracking-wide font-normal"
                                                         >
                                                             <Check className="w-5 h-5 text-[#F16822] mt-0.5 shrink-0" />
                                                             {benefit}

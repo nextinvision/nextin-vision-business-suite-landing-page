@@ -17,7 +17,7 @@ export default function ValueProposition() {
                 <div className="space-y-8">
                     <BlurText
                         text="Everything Your Business Needs, in One Place"
-                        className="text-3xl md:text-5xl text-white font-heading leading-tight"
+                        className="text-3xl md:text-5xl lg:text-6xl text-white font-heading font-extrabold leading-tight tracking-tight"
                         delay={50}
                     />
 
@@ -27,7 +27,7 @@ export default function ValueProposition() {
                                 text="Nextin Project Management is a comprehensive SaaS platform designed to help businesses of all sizes manage their operations efficiently. From project planning to team collaboration, from invoicing to HR management—we've got you covered."
                                 disabled={false}
                                 speed={3}
-                                className="text-lg leading-relaxed text-muted-foreground !inline"
+                                className="text-lg md:text-xl leading-relaxed text-muted-foreground !inline tracking-wide font-light"
                             />
                         </div>
                         <button
@@ -53,7 +53,7 @@ export default function ValueProposition() {
                             className={`group flex items-start gap-4 bg-white/5 border border-white/10 rounded-xl md:rounded-2xl p-5 md:p-6 shadow-sm hover:bg-white/10 hover:border-white/20 hover:shadow-lg hover:-translate-y-1 transition-all duration-500 ${index >= 2 && !showAllItems ? 'hidden md:flex' : 'flex'}`}
                         >
                             <CheckCircle className="w-7 h-7 shrink-0 text-[#F16822] mt-0.5 group-hover:scale-110 transition-transform duration-300" />
-                            <p className="text-white text-sm md:text-base leading-relaxed font-medium">{item}</p>
+                            <p className="text-white text-sm md:text-base lg:text-lg leading-relaxed font-semibold tracking-wide">{item}</p>
                         </div>
                     ))}
                     <button

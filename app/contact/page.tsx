@@ -72,14 +72,14 @@ export default function ContactPage() {
             >
               <BlurText
                 text="Get in Touch"
-                className="text-4xl md:text-6xl text-white justify-center font-heading mb-4"
+                className="text-4xl md:text-6xl lg:text-7xl text-white justify-center font-heading font-extrabold tracking-tight leading-tight mb-4"
                 delay={100}
               />
               <ShinyText
                 text="Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible."
                 disabled={false}
                 speed={3}
-                className="text-lg md:text-xl max-w-3xl mx-auto text-neutral-300"
+                className="text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto text-neutral-200 leading-relaxed tracking-wide font-light"
               />
             </AnimatedContent>
           </div>
@@ -95,20 +95,20 @@ export default function ContactPage() {
                   <div className="w-12 h-12 rounded-lg bg-[#005B82]/20 flex items-center justify-center mb-4">
                     <Mail className="w-6 h-6 text-[#005B82]" />
                   </div>
-                  <CardTitle className="text-white">Email Us</CardTitle>
+                  <CardTitle className="text-white text-xl md:text-2xl font-extrabold tracking-tight">Email Us</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-neutral-300 mb-2">General Inquiries</p>
+                  <p className="text-neutral-200 mb-2 font-semibold tracking-wide text-sm md:text-base">General Inquiries</p>
                   <a
                     href="mailto:support@nextin.com"
-                    className="text-[#005B82] hover:text-[#004A6B] transition-colors"
+                    className="text-[#005B82] hover:text-[#004A6B] transition-colors font-bold tracking-wide text-sm md:text-base"
                   >
                     support@nextin.com
                   </a>
                   <p className="text-neutral-300 mt-4 mb-2">Sales</p>
                   <a
                     href="mailto:sales@nextin.com"
-                    className="text-[#005B82] hover:text-[#004A6B] transition-colors"
+                    className="text-[#005B82] hover:text-[#004A6B] transition-colors font-bold tracking-wide text-sm md:text-base"
                   >
                     sales@nextin.com
                   </a>
@@ -126,12 +126,12 @@ export default function ContactPage() {
                   <p className="text-neutral-300 mb-2">Phone</p>
                   <a
                     href="tel:+1234567890"
-                    className="text-[#005B82] hover:text-[#004A6B] transition-colors"
+                    className="text-[#005B82] hover:text-[#004A6B] transition-colors font-bold tracking-wide text-sm md:text-base"
                   >
                     +1 (234) 567-890
                   </a>
                   <p className="text-neutral-300 mt-4 mb-2">Business Hours</p>
-                  <p className="text-neutral-400 text-sm">Mon - Fri: 9:00 AM - 6:00 PM EST</p>
+                  <p className="text-neutral-300 text-sm md:text-base tracking-wide font-light">Mon - Fri: 9:00 AM - 6:00 PM EST</p>
                 </CardContent>
               </Card>
 
@@ -144,7 +144,7 @@ export default function ContactPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-neutral-300 mb-2">Office Address</p>
-                  <p className="text-neutral-400 text-sm">
+                  <p className="text-neutral-300 text-sm md:text-base leading-relaxed tracking-wide font-light">
                     123 Business Street<br />
                     Suite 100<br />
                     City, State 12345<br />
@@ -162,8 +162,8 @@ export default function ContactPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-neutral-300 mb-2">We typically respond within</p>
-                  <p className="text-[#F16822] font-semibold">24 hours</p>
-                  <p className="text-neutral-400 text-sm mt-2">
+                  <p className="text-[#F16822] font-extrabold text-lg md:text-xl tracking-tight">24 hours</p>
+                  <p className="text-neutral-300 text-sm md:text-base mt-2 leading-relaxed tracking-wide font-light">
                     For urgent matters, please call us directly.
                   </p>
                 </CardContent>
@@ -174,7 +174,7 @@ export default function ContactPage() {
             <div className="md:col-span-2">
               <Card className="bg-white/5 border-white/10 backdrop-blur-sm">
                 <CardHeader>
-                  <CardTitle className="text-2xl text-white flex items-center gap-2">
+                  <CardTitle className="text-2xl md:text-3xl text-white font-extrabold tracking-tight flex items-center gap-2">
                     <MessageSquare className="w-6 h-6" />
                     Send us a Message
                   </CardTitle>
@@ -183,7 +183,7 @@ export default function ContactPage() {
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid md:grid-cols-2 gap-6">
                       <div className="space-y-2">
-                        <Label htmlFor="name" className="text-neutral-300">
+                        <Label htmlFor="name" className="text-neutral-200 font-semibold tracking-wide text-sm md:text-base">
                           Full Name *
                         </Label>
                         <Input
@@ -193,7 +193,7 @@ export default function ContactPage() {
                           required
                           value={formData.name}
                           onChange={handleChange}
-                          className="bg-white/5 border-white/10 text-white placeholder:text-neutral-500 focus:border-[#005B82]"
+                          className="bg-white/5 border-white/10 text-white placeholder:text-neutral-500 focus:border-[#005B82] font-light tracking-wide text-sm md:text-base"
                           placeholder="John Doe"
                         />
                       </div>
@@ -208,7 +208,7 @@ export default function ContactPage() {
                           required
                           value={formData.email}
                           onChange={handleChange}
-                          className="bg-white/5 border-white/10 text-white placeholder:text-neutral-500 focus:border-[#005B82]"
+                          className="bg-white/5 border-white/10 text-white placeholder:text-neutral-500 focus:border-[#005B82] font-light tracking-wide text-sm md:text-base"
                           placeholder="john@example.com"
                         />
                       </div>
@@ -225,7 +225,7 @@ export default function ContactPage() {
                           type="text"
                           value={formData.company}
                           onChange={handleChange}
-                          className="bg-white/5 border-white/10 text-white placeholder:text-neutral-500 focus:border-[#005B82]"
+                          className="bg-white/5 border-white/10 text-white placeholder:text-neutral-500 focus:border-[#005B82] font-light tracking-wide text-sm md:text-base"
                           placeholder="Acme Inc."
                         />
                       </div>
@@ -239,7 +239,7 @@ export default function ContactPage() {
                           type="tel"
                           value={formData.phone}
                           onChange={handleChange}
-                          className="bg-white/5 border-white/10 text-white placeholder:text-neutral-500 focus:border-[#005B82]"
+                          className="bg-white/5 border-white/10 text-white placeholder:text-neutral-500 focus:border-[#005B82] font-light tracking-wide text-sm md:text-base"
                           placeholder="+1 (234) 567-890"
                         />
                       </div>

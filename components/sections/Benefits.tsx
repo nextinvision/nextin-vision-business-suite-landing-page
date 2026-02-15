@@ -130,17 +130,17 @@ export default function Benefits() {
                         >
                             <benefit.icon className={`w-7 h-7 ${benefit.color} group-hover:scale-110 transition-transform duration-300`} />
                         </div>
-                        <h3 className="text-xl md:text-2xl font-bold text-white mb-3 group-hover:text-white transition-colors">
+                        <h3 className="text-xl md:text-2xl lg:text-3xl font-extrabold text-white mb-3 group-hover:text-white transition-colors tracking-tight leading-tight">
                             {benefit.title}
                         </h3>
-                        <p className="text-neutral-300 font-medium mb-6 text-base">
+                        <p className="text-neutral-200 font-semibold mb-6 text-base md:text-lg leading-relaxed tracking-wide">
                             {benefit.description}
                         </p>
                         <ul className="space-y-2">
                             {benefit.details.map((detail, idx) => (
                                 <li
                                     key={idx}
-                                    className="flex items-center gap-3 text-sm md:text-base text-neutral-300 group-hover:text-neutral-200 transition-colors"
+                                    className="flex items-center gap-3 text-sm md:text-base text-neutral-200 group-hover:text-white transition-colors leading-relaxed tracking-wide font-normal"
                                 >
                                     <span className="w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
                                     {detail}

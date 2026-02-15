@@ -27,13 +27,13 @@ export default function TechnicalExcellence() {
             <div className="text-center mb-16">
                 <BlurText
                     text="Built for Scale, Designed for Security"
-                    className="text-3xl md:text-5xl text-white justify-center font-heading"
+                    className="text-3xl md:text-5xl lg:text-6xl text-white justify-center font-heading font-extrabold tracking-tight leading-tight"
                     delay={150}
                     animateBy="words"
                     direction="top"
                     as="h2"
                 />
-                <p className="mt-4 text-neutral-400 max-w-2xl mx-auto">
+                <p className="mt-4 text-neutral-300 max-w-2xl mx-auto text-base md:text-lg leading-relaxed tracking-wide font-light">
                     Enterprise-grade architecture that grows with your business.
                 </p>
             </div>
@@ -57,16 +57,16 @@ function MultiTenantCard() {
                 <div className="w-12 h-12 rounded-xl bg-[#005B82]/20 flex items-center justify-center mb-3 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
                     <Database className="w-6 h-6 text-[#005B82] group-hover:text-[#F16822] transition-colors duration-300" />
                 </div>
-                <CardTitle className="text-white text-xl md:text-2xl mb-2">Multi-Tenant Architecture</CardTitle>
-                <CardDescription className="text-neutral-300 text-base mb-4">
+                <CardTitle className="text-white text-xl md:text-2xl lg:text-3xl mb-2 font-extrabold tracking-tight leading-tight">Multi-Tenant Architecture</CardTitle>
+                <CardDescription className="text-neutral-200 text-base md:text-lg mb-4 font-semibold tracking-wide leading-relaxed">
                     Enterprise-Grade Data Isolation & Scalability
                 </CardDescription>
             </CardHeader>
             <CardContent>
                 <div className="space-y-4">
                     <div>
-                        <h4 className="text-white font-semibold text-sm md:text-base mb-3 uppercase tracking-wider">Core Features</h4>
-                        <ul className="space-y-3 text-sm md:text-base text-neutral-300">
+                        <h4 className="text-white font-bold text-sm md:text-base mb-3 uppercase tracking-[0.15em] letter-spacing-widest">Core Features</h4>
+                        <ul className="space-y-3 text-sm md:text-base lg:text-lg text-neutral-200 leading-relaxed tracking-wide font-light">
                             <li className="flex items-start gap-3">
                                 <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
                                 Complete data isolation between companies with tenant-based routing
@@ -87,8 +87,8 @@ function MultiTenantCard() {
                     </div>
                     
                     <div className="pt-4 border-t border-white/10">
-                        <h4 className="text-white font-semibold text-sm md:text-base mb-3 uppercase tracking-wider">Benefits</h4>
-                        <ul className="space-y-2 text-sm md:text-base text-neutral-300">
+                        <h4 className="text-white font-bold text-sm md:text-base mb-3 uppercase tracking-[0.15em] letter-spacing-widest">Benefits</h4>
+                        <ul className="space-y-2 text-sm md:text-base lg:text-lg text-neutral-200 leading-relaxed tracking-wide font-light">
                             <li className="flex items-start gap-3">
                                 <span className="mt-1.5 w-2 h-2 rounded-full bg-[#005B82] shrink-0 group-hover:scale-125 transition-transform duration-300" />
                                 <span><strong className="text-white">Cost Efficiency:</strong> Shared infrastructure reduces operational costs</span>
@@ -109,7 +109,7 @@ function MultiTenantCard() {
                     </div>
 
                     <div className="pt-4 border-t border-white/10">
-                        <p className="text-xs md:text-sm text-neutral-400 italic leading-relaxed">
+                        <p className="text-xs md:text-sm lg:text-base text-neutral-300 italic leading-relaxed tracking-wide font-light">
                             Our multi-tenant architecture ensures that each company&apos;s data is completely isolated, whether using shared or dedicated databases. This design allows for seamless scaling while maintaining the highest levels of security and performance.
                         </p>
                     </div>
@@ -126,14 +126,14 @@ function SecurityCard() {
                 <div className="w-10 h-10 rounded-lg bg-green-500/20 flex items-center justify-center mb-2">
                     <Shield className="w-5 h-5 text-green-400" />
                 </div>
-                <CardTitle className="text-neutral-200">Security First</CardTitle>
-                <CardDescription className="text-neutral-400">
+                <CardTitle className="text-white text-lg md:text-xl font-extrabold tracking-tight">Security First</CardTitle>
+                <CardDescription className="text-neutral-200 text-base font-semibold tracking-wide">
                     Your Data is Protected
                 </CardDescription>
             </CardHeader>
             <CardContent>
                 <div className="grid md:grid-cols-2 gap-4">
-                    <ul className="space-y-3 text-sm text-neutral-400">
+                    <ul className="space-y-3 text-sm md:text-base text-neutral-200 leading-relaxed tracking-wide font-light">
                         <li className="flex items-center gap-2">
                             <Lock className="w-4 h-4 text-green-500" />
                             JWT-based auth with HTTP-only cookies
@@ -147,7 +147,7 @@ function SecurityCard() {
                             Encrypted database connections
                         </li>
                     </ul>
-                    <ul className="space-y-3 text-sm text-neutral-400">
+                    <ul className="space-y-3 text-sm md:text-base text-neutral-200 leading-relaxed tracking-wide font-light">
                         <li className="flex items-center gap-2">
                             <Lock className="w-4 h-4 text-green-500" />
                             Rate limiting on API routes
@@ -174,13 +174,13 @@ function ScalablePerformanceCard() {
                 <div className="w-10 h-10 rounded-lg bg-orange-500/20 flex items-center justify-center mb-2">
                     <Zap className="w-5 h-5 text-orange-400" />
                 </div>
-                <CardTitle className="text-neutral-200 text-lg">Scalable Infrastructure</CardTitle>
-                <CardDescription className="text-neutral-400">
+                <CardTitle className="text-white text-lg md:text-xl font-extrabold tracking-tight">Scalable Infrastructure</CardTitle>
+                <CardDescription className="text-neutral-200 text-base font-semibold tracking-wide">
                     Grows with Your Business
                 </CardDescription>
             </CardHeader>
             <CardContent>
-                <ul className="space-y-2 text-sm text-neutral-400">
+                <ul className="space-y-2 text-sm md:text-base text-neutral-200 leading-relaxed tracking-wide font-light">
                     <li className="flex items-center gap-2">
                         <Server className="w-4 h-4 text-orange-500" />
                         Horizontal scaling support
@@ -206,10 +206,10 @@ function ScalableStorageCard() {
                 <div className="w-10 h-10 rounded-lg bg-purple-500/20 flex items-center justify-center mb-2">
                     <Database className="w-5 h-5 text-purple-400" />
                 </div>
-                <CardTitle className="text-neutral-200 text-lg">Storage & Optimization</CardTitle>
+                <CardTitle className="text-white text-lg md:text-xl font-extrabold tracking-tight">Storage & Optimization</CardTitle>
             </CardHeader>
             <CardContent>
-                <ul className="space-y-2 text-sm text-neutral-400">
+                <ul className="space-y-2 text-sm md:text-base text-neutral-200 leading-relaxed tracking-wide font-light">
                     <li className="flex items-center gap-2">
                         <Cpu className="w-4 h-4 text-purple-500" />
                         Stateless API design
@@ -235,13 +235,13 @@ function FrontendStackCard() {
                 <div className="w-10 h-10 rounded-lg bg-cyan-500/20 flex items-center justify-center mb-2">
                     <Code className="w-5 h-5 text-cyan-400" />
                 </div>
-                <CardTitle className="text-neutral-200 text-lg">Modern Technology Stack</CardTitle>
-                <CardDescription className="text-neutral-400">
+                <CardTitle className="text-white text-lg md:text-xl font-extrabold tracking-tight">Modern Technology Stack</CardTitle>
+                <CardDescription className="text-neutral-200 text-base font-semibold tracking-wide">
                     Built with Best-in-Class Tools
                 </CardDescription>
             </CardHeader>
             <CardContent>
-                <ul className="space-y-2 text-sm text-neutral-400">
+                <ul className="space-y-2 text-sm md:text-base text-neutral-200 leading-relaxed tracking-wide font-light">
                     <li className="flex items-center gap-2">
                         <Globe className="w-4 h-4 text-cyan-500" />
                         Next.js 15: Latest React framework with App Router
@@ -267,10 +267,10 @@ function BackendStackCard() {
                 <div className="w-10 h-10 rounded-lg bg-pink-500/20 flex items-center justify-center mb-2">
                     <Layers className="w-5 h-5 text-pink-400" />
                 </div>
-                <CardTitle className="text-neutral-200 text-lg">Backend & Database</CardTitle>
+                <CardTitle className="text-white text-lg md:text-xl font-extrabold tracking-tight">Backend & Database</CardTitle>
             </CardHeader>
             <CardContent>
-                <ul className="space-y-2 text-sm text-neutral-400">
+                <ul className="space-y-2 text-sm md:text-base text-neutral-200 leading-relaxed tracking-wide font-light">
                     <li className="flex items-center gap-2">
                         <Database className="w-4 h-4 text-pink-500" />
                         MongoDB: Scalable NoSQL database

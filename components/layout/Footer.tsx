@@ -89,12 +89,12 @@ const Footer = ({
                   </span>
                 </div>
               </Link>
-              <p className="mt-4 text-neutral-300 max-w-xs leading-relaxed">{tagline}</p>
+              <p className="mt-4 text-neutral-200 max-w-xs leading-relaxed tracking-wide font-light text-base md:text-lg">{tagline}</p>
 
               <div className="mt-6 flex flex-col gap-2 text-slate-400">
                 <div className="flex items-center gap-2">
                   <Mail className="w-4 h-4" />
-                  <span className="text-sm">support@nextin.com</span>
+                  <span className="text-sm md:text-base tracking-wide font-normal">support@nextin.com</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Phone className="w-4 h-4" />
@@ -123,12 +123,12 @@ const Footer = ({
             </div>
             {menuItems.map((section, sectionIdx) => (
               <div key={sectionIdx}>
-                <h3 className="mb-6 font-bold text-white text-lg">{section.title}</h3>
-                <ul className="space-y-3 text-neutral-300">
+                <h3 className="mb-6 font-extrabold text-white text-lg md:text-xl tracking-tight">{section.title}</h3>
+                <ul className="space-y-3 text-neutral-200">
                   {section.links.map((link, linkIdx) => (
                     <li
                       key={linkIdx}
-                      className="font-medium hover:text-white transition-all duration-300 hover:translate-x-1"
+                      className="font-semibold hover:text-white transition-all duration-300 hover:translate-x-1 tracking-wide text-sm md:text-base"
                     >
                       <a href={link.url} className="inline-block">{link.text}</a>
                     </li>
@@ -138,7 +138,7 @@ const Footer = ({
             ))}
           </div>
           <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
-            <p className="text-justify">{copyright}</p>
+            <p className="text-justify text-sm md:text-base tracking-wide font-light leading-relaxed">{copyright}</p>
             <ul className="flex gap-6">
               {bottomLinks.map((link, linkIdx) => (
                 <li key={linkIdx} className="hover:text-white transition-colors">

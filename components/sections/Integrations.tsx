@@ -84,10 +84,10 @@ export default function Integrations() {
                         >
                             <integration.icon className={`w-7 h-7 ${integration.color} group-hover:scale-110 transition-transform duration-300`} />
                         </div>
-                        <h3 className="text-white font-bold mb-2 text-sm md:text-base group-hover:text-white transition-colors">
+                        <h3 className="text-white font-extrabold mb-2 text-sm md:text-base lg:text-lg group-hover:text-white transition-colors tracking-tight">
                             {integration.name}
                         </h3>
-                        <p className="text-xs md:text-sm text-neutral-300 text-center leading-relaxed">
+                        <p className="text-xs md:text-sm lg:text-base text-neutral-200 text-center leading-relaxed tracking-wide font-light">
                             {integration.description}
                         </p>
                     </div>
@@ -95,7 +95,7 @@ export default function Integrations() {
             </div>
 
             <div className="mt-12 text-center">
-                <p className="text-sm text-muted-foreground mt-1">
+                <p className="text-sm md:text-base text-neutral-400 mt-1 leading-relaxed tracking-wide font-light italic">
                     *Note: Some integrations may be planned for future releases
                 </p>
             </div>
