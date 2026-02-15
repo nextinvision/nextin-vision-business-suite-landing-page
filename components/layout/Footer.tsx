@@ -1,6 +1,9 @@
+import Link from "next/link";
+// import Image from "next/image"; // Uncomment when adding logo image
 import { Mail, Phone, MapPin } from "lucide-react";
 import { FaFacebook, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
 import type { FooterProps } from "@/types/layout";
+import { COLORS } from "@/lib/constants";
 
 const Footer = ({
   logo = {
@@ -60,11 +63,32 @@ const Footer = ({
         <footer>
           <div className="grid grid-cols-2 gap-8 lg:grid-cols-6 mb-12">
             <div className="col-span-2 mb-8 lg:mb-0">
-              <div className="flex items-center gap-2 lg:justify-start mb-4">
-                <a href={logo.url} className="text-2xl md:text-3xl font-bold bg-gradient-to-br from-white to-white/80 bg-clip-text text-transparent font-heading hover:from-white hover:to-white transition-all duration-300">
-                  {logo.title}
-                </a>
-              </div>
+              <Link href={logo.url} className="flex items-center gap-2 lg:justify-start mb-4 group">
+                {/* Logo Image - You can replace this with your actual logo image */}
+                {/* Uncomment and update the path when you have a logo image */}
+                {/* <Image
+                  src="/logo.png"
+                  alt="NEXTIN WORKSPACE"
+                  width={40}
+                  height={40}
+                  className="object-contain"
+                /> */}
+                {/* Text-based logo with brand colors */}
+                <div className="flex items-center gap-1">
+                  <span 
+                    className="text-2xl md:text-3xl font-bold font-heading transition-colors group-hover:opacity-90"
+                    style={{ color: COLORS.NEXTIN_ORANGE }}
+                  >
+                    NEXTIN
+                  </span>
+                  <span 
+                    className="text-2xl md:text-3xl font-bold font-heading transition-colors group-hover:opacity-90"
+                    style={{ color: COLORS.WORKSPACE_BLUE }}
+                  >
+                    WORKSPACE
+                  </span>
+                </div>
+              </Link>
               <p className="mt-4 text-neutral-300 max-w-xs leading-relaxed">{tagline}</p>
 
               <div className="mt-6 flex flex-col gap-2 text-slate-400">
