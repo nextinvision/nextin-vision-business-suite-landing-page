@@ -101,30 +101,30 @@ export default function UseCases() {
                         {useCases.map((useCase, index) => (
                             <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3 pl-4">
                                 <div className="p-1 h-full">
-                                    <Card className="h-full bg-white/5 border-white/10 backdrop-blur-sm hover:bg-white/10 transition-colors flex flex-col">
+                                    <Card className="h-full bg-white/5 border-white/10 backdrop-blur-sm hover:bg-white/10 hover:border-white/20 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-black/30 flex flex-col">
                                         <CardHeader>
-                                            <CardTitle className="text-neutral-200 text-xl mb-2">
+                                            <CardTitle className="text-white text-xl md:text-2xl mb-3">
                                                 {useCase.title}
                                             </CardTitle>
-                                            <CardDescription className="text-neutral-100 font-semibold text-base">
+                                            <CardDescription className="text-neutral-200 font-semibold text-base md:text-lg">
                                                 {useCase.headline}
                                             </CardDescription>
                                         </CardHeader>
                                         <CardContent className="flex-1 flex flex-col justify-between gap-6">
-                                            <p className="text-neutral-400 text-sm leading-relaxed text-justify">
+                                            <p className="text-neutral-300 text-sm md:text-base leading-relaxed text-justify">
                                                 {useCase.description}
                                             </p>
                                             <div>
-                                                <h4 className="text-neutral-300 text-sm font-semibold mb-3">
+                                                <h4 className="text-white text-sm md:text-base font-bold mb-4">
                                                     Key Benefits:
                                                 </h4>
-                                                <ul className="space-y-2">
+                                                <ul className="space-y-3">
                                                     {useCase.benefits.map((benefit, idx) => (
                                                         <li
                                                             key={idx}
-                                                            className="flex items-start gap-2 text-sm text-neutral-400"
+                                                            className="flex items-start gap-3 text-sm md:text-base text-neutral-300"
                                                         >
-                                                            <Check className="w-4 h-4 text-blue-500 mt-0.5 shrink-0" />
+                                                            <Check className="w-5 h-5 text-[#F16822] mt-0.5 shrink-0" />
                                                             {benefit}
                                                         </li>
                                                     ))}
@@ -136,8 +136,8 @@ export default function UseCases() {
                             </CarouselItem>
                         ))}
                     </CarouselContent>
-                    <CarouselPrevious className="hidden md:flex -left-12 bg-white/5 border-white/10 text-white hover:bg-white/10 hover:text-white" />
-                    <CarouselNext className="hidden md:flex -right-12 bg-white/5 border-white/10 text-white hover:bg-white/10 hover:text-white" />
+                    <CarouselPrevious className="hidden md:flex -left-12 bg-white/5 border-2 border-white/10 text-white hover:bg-white/10 hover:border-white/20 hover:text-white hover:scale-110 transition-all duration-300" />
+                    <CarouselNext className="hidden md:flex -right-12 bg-white/5 border-2 border-white/10 text-white hover:bg-white/10 hover:border-white/20 hover:text-white hover:scale-110 transition-all duration-300" />
                 </Carousel>
             </div>
         </section>

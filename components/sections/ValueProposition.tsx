@@ -32,7 +32,7 @@ export default function ValueProposition() {
                         </div>
                         <button
                             onClick={() => setIsExpanded(!isExpanded)}
-                            className="mt-2 text-sm text-blue-400 hover:text-blue-300 font-medium md:hidden focus:outline-none"
+                            className="mt-2 text-sm text-[#F16822] hover:text-[#D85A1A] font-medium md:hidden focus:outline-none"
                         >
                             {isExpanded ? "Read Less" : "Read More"}
                         </button>
@@ -50,15 +50,15 @@ export default function ValueProposition() {
                     ].map((item, index) => (
                         <div
                             key={item}
-                            className={`flex items-start gap-3 bg-white/5 border border-white/10 rounded-xl p-4 shadow-sm hover:bg-white/10 transition-colors duration-300 ${index >= 2 && !showAllItems ? 'hidden md:flex' : 'flex'}`}
+                            className={`group flex items-start gap-4 bg-white/5 border border-white/10 rounded-xl md:rounded-2xl p-5 md:p-6 shadow-sm hover:bg-white/10 hover:border-white/20 hover:shadow-lg hover:-translate-y-1 transition-all duration-500 ${index >= 2 && !showAllItems ? 'hidden md:flex' : 'flex'}`}
                         >
-                            <CheckCircle className="w-6 h-6 shrink-0 text-[#0066CC] mt-0.5" />
-                            <p className="text-gray-300 text-sm md:text-base">{item}</p>
+                            <CheckCircle className="w-7 h-7 shrink-0 text-[#F16822] mt-0.5 group-hover:scale-110 transition-transform duration-300" />
+                            <p className="text-white text-sm md:text-base leading-relaxed font-medium">{item}</p>
                         </div>
                     ))}
                     <button
                         onClick={() => setShowAllItems(!showAllItems)}
-                        className="w-full py-2 text-sm text-blue-400 hover:text-blue-300 font-medium md:hidden focus:outline-none"
+                        className="w-full py-2 text-sm text-[#F16822] hover:text-[#D85A1A] font-medium md:hidden focus:outline-none"
                     >
                         {showAllItems ? "View Less" : "View More"}
                     </button>

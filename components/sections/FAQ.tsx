@@ -9,14 +9,17 @@ import BlurText from "@/components/common/BlurText";
 
 export default function FAQ() {
     return (
-        <div className="w-11/12 max-w-5xl mx-auto mt-6 mb-6 md:mt-20 md:mb-20 p-8 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm shadow-xl flex flex-col md:flex-row gap-8">
+        <div className="w-11/12 max-w-6xl mx-auto mt-6 mb-6 md:mt-24 md:mb-24 p-8 md:p-12 rounded-3xl border border-white/10 bg-gradient-to-br from-white/5 via-white/3 to-white/5 backdrop-blur-md shadow-2xl shadow-black/20 flex flex-col md:flex-row gap-8 md:gap-12">
             <div className="md:w-1/3">
                 <div>
                     <BlurText
                         text="Frequently Asked Questions"
-                        className="text-3xl md:text-5xl text-white font-heading"
+                        className="text-3xl md:text-5xl text-white font-heading mb-4"
                         delay={50}
                     />
+                    <p className="text-neutral-300 text-sm md:text-base leading-relaxed">
+                        Everything you need to know about Nextin Workspace. Can't find the answer you're looking for? Please contact our support team.
+                    </p>
                 </div>
             </div>
             <div className="md:w-2/3">
@@ -27,8 +30,8 @@ export default function FAQ() {
                     defaultValue="item-1"
                 >
                     <AccordionItem value="item-1" className="border-b border-white/10">
-                        <AccordionTrigger className="text-slate-100 hover:no-underline hover:text-white">Is my data secure?</AccordionTrigger>
-                        <AccordionContent className="flex flex-col gap-4 text-balance text-slate-300">
+                        <AccordionTrigger className="text-white hover:no-underline hover:text-white font-semibold text-base md:text-lg py-6">Is my data secure?</AccordionTrigger>
+                        <AccordionContent className="flex flex-col gap-4 text-balance text-neutral-300 leading-relaxed">
                             <p>
                                 Yes, absolutely. Nextin uses enterprise-grade security with complete data isolation between companies. You can optionally configure your own dedicated database for maximum security. All connections are encrypted, and we follow industry best practices for data protection.
                             </p>
@@ -99,8 +102,8 @@ export default function FAQ() {
                         </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-10" className="border-b-0">
-                        <AccordionTrigger className="text-slate-100 hover:no-underline hover:text-white">What happens if I need to cancel?</AccordionTrigger>
-                        <AccordionContent className="flex flex-col gap-4 text-balance text-slate-300">
+                        <AccordionTrigger className="text-white hover:no-underline hover:text-white font-semibold text-base md:text-lg py-6">What happens if I need to cancel?</AccordionTrigger>
+                        <AccordionContent className="flex flex-col gap-4 text-balance text-neutral-300 leading-relaxed">
                             <p>
                                 You can cancel anytime. Your data will be available for export for 30 days after cancellation. No long-term contracts required.
                             </p>

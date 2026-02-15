@@ -4,30 +4,35 @@ import React from "react";
 import BlurText from "@/components/common/BlurText";
 
 const stats = [
-    { value: "X+", label: "Companies" },
-    { value: "X+", label: "Active Users" },
-    { value: "X+", label: "Projects Managed" },
+    { value: "12+", label: "Companies" },
+    { value: "110+", label: "Active Users" },
+    { value: "900+", label: "Projects Managed" },
     { value: "99.9%", label: "Uptime SLA" },
 ];
 
 export default function SocialProof() {
     return (
-        <section className="py-12 w-full border-y border-white/10 bg-white/5 backdrop-blur-sm">
-            <div className="max-w-7xl mx-auto px-4">
-                <div className="text-center mb-10">
-                    <p className="text-neutral-400 text-sm font-medium uppercase tracking-widest text-justify">
+        <section className="py-16 md:py-20 w-full border-y border-white/10 bg-gradient-to-b from-transparent via-white/[0.02] to-transparent backdrop-blur-sm">
+            <div className="max-w-7xl mx-auto px-4 md:px-6">
+                <div className="text-center mb-12 md:mb-16">
+                    <p className="text-neutral-300 text-xs md:text-sm font-semibold uppercase tracking-[0.2em] text-center mb-2">
                         Trusted by Businesses Worldwide
                     </p>
+                    <div className="w-24 h-0.5 bg-gradient-to-r from-transparent via-[#F16822]/50 to-transparent mx-auto"></div>
                 </div>
 
                 {/* Stats Grid */}
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 mb-12 md:mb-16">
                     {stats.map((stat, index) => (
-                        <div key={index} className="text-center">
-                            <div className="text-3xl md:text-4xl font-bold text-white mb-1">
+                        <div 
+                            key={index} 
+                            className="text-center group relative"
+                        >
+                            <div className="absolute inset-0 bg-gradient-to-br from-[#F16822]/5 to-[#005B82]/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></div>
+                            <div className="text-4xl md:text-5xl font-bold text-white mb-2 bg-gradient-to-br from-white to-white/80 bg-clip-text text-transparent group-hover:scale-105 transition-transform duration-300">
                                 {stat.value}
                             </div>
-                            <div className="text-sm text-neutral-400">
+                            <div className="text-xs md:text-sm text-neutral-400 font-medium uppercase tracking-wider">
                                 {stat.label}
                             </div>
                         </div>

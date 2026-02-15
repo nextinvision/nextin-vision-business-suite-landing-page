@@ -20,7 +20,7 @@ export default function Home() {
       <StickyNavbar />
       <BackgroundGradients />
       <div className="w-full overflow-x-hidden">
-        <section className="flex flex-col gap-12 md:gap-16 pb-24">
+        <section className="flex flex-col gap-16 md:gap-24 pb-24 md:pb-32">
           <Header />
           <SocialProof />
           <ValueProposition />

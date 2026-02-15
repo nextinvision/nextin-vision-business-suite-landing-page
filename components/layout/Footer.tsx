@@ -55,17 +55,17 @@ const Footer = ({
   bottomLinks = [],
 }: FooterProps) => {
   return (
-    <section className="py-16 w-full border-t border-white/10 bg-white/5 backdrop-blur-sm overflow-hidden">
-      <div className="container mx-auto px-6">
+    <section className="py-16 md:py-20 w-full border-t border-white/10 bg-gradient-to-b from-white/5 via-white/3 to-transparent backdrop-blur-md overflow-hidden">
+      <div className="container mx-auto px-6 md:px-8">
         <footer>
           <div className="grid grid-cols-2 gap-8 lg:grid-cols-6 mb-12">
             <div className="col-span-2 mb-8 lg:mb-0">
-              <div className="flex items-center gap-2 lg:justify-start">
-                <a href={logo.url} className="text-2xl font-bold text-white font-heading">
+              <div className="flex items-center gap-2 lg:justify-start mb-4">
+                <a href={logo.url} className="text-2xl md:text-3xl font-bold bg-gradient-to-br from-white to-white/80 bg-clip-text text-transparent font-heading hover:from-white hover:to-white transition-all duration-300">
                   {logo.title}
                 </a>
               </div>
-              <p className="mt-4 text-slate-400 max-w-xs">{tagline}</p>
+              <p className="mt-4 text-neutral-300 max-w-xs leading-relaxed">{tagline}</p>
 
               <div className="mt-6 flex flex-col gap-2 text-slate-400">
                 <div className="flex items-center gap-2">
@@ -83,30 +83,30 @@ const Footer = ({
               </div>
 
               <div className="flex gap-4 mt-6">
-                <a href="#" className="text-slate-400 hover:text-white transition-colors">
+                <a href="#" className="text-neutral-400 hover:text-[#F16822] transition-all duration-300 hover:scale-125">
                   <FaLinkedin className="w-5 h-5" />
                 </a>
-                <a href="#" className="text-slate-400 hover:text-white transition-colors">
+                <a href="#" className="text-neutral-400 hover:text-[#F16822] transition-all duration-300 hover:scale-125">
                   <FaTwitter className="w-5 h-5" />
                 </a>
-                <a href="#" className="text-slate-400 hover:text-white transition-colors">
+                <a href="#" className="text-neutral-400 hover:text-[#F16822] transition-all duration-300 hover:scale-125">
                   <FaFacebook className="w-5 h-5" />
                 </a>
-                <a href="#" className="text-slate-400 hover:text-white transition-colors">
+                <a href="#" className="text-neutral-400 hover:text-[#F16822] transition-all duration-300 hover:scale-125">
                   <FaYoutube className="w-5 h-5" />
                 </a>
               </div>
             </div>
             {menuItems.map((section, sectionIdx) => (
               <div key={sectionIdx}>
-                <h3 className="mb-4 font-bold text-white">{section.title}</h3>
-                <ul className="space-y-3 text-slate-400">
+                <h3 className="mb-6 font-bold text-white text-lg">{section.title}</h3>
+                <ul className="space-y-3 text-neutral-300">
                   {section.links.map((link, linkIdx) => (
                     <li
                       key={linkIdx}
-                      className="font-medium hover:text-white transition-colors"
+                      className="font-medium hover:text-white transition-all duration-300 hover:translate-x-1"
                     >
-                      <a href={link.url}>{link.text}</a>
+                      <a href={link.url} className="inline-block">{link.text}</a>
                     </li>
                   ))}
                 </ul>

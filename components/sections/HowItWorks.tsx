@@ -51,24 +51,24 @@ export default function HowItWorks() {
 
             <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 {/* Connecting Line (Desktop) */}
-                <div className="hidden lg:block absolute top-12 left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-blue-500/0 via-blue-500/50 to-blue-500/0" />
+                <div className="hidden lg:block absolute top-12 left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-[#005B82]/0 via-[#005B82]/50 to-[#005B82]/0" />
 
                 {steps.map((step, index) => (
                     <div key={index} className="relative flex flex-col items-center text-center group">
-                        <div className="w-24 h-24 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm flex items-center justify-center mb-6 relative z-10 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-black/20">
-                            <div className="absolute inset-0 rounded-full bg-blue-500/10 blur-xl group-hover:bg-blue-500/20 transition-colors" />
-                            <step.icon className="w-10 h-10 text-blue-400" />
-                            <div className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold text-sm border-4 border-[#0a0a0a]">
+                        <div className="w-28 h-28 md:w-32 md:h-32 rounded-full bg-white/5 border-2 border-white/10 backdrop-blur-sm flex items-center justify-center mb-6 relative z-10 group-hover:scale-110 transition-all duration-500 shadow-xl shadow-black/30 group-hover:shadow-2xl group-hover:shadow-[#F16822]/20">
+                            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[#005B82]/20 to-[#F16822]/10 blur-xl group-hover:from-[#005B82]/30 group-hover:to-[#F16822]/20 transition-all duration-500" />
+                            <step.icon className="w-12 h-12 md:w-14 md:h-14 text-[#005B82] group-hover:text-[#F16822] transition-colors duration-300 relative z-10" />
+                            <div className="absolute -top-2 -right-2 w-10 h-10 md:w-12 md:h-12 rounded-full bg-gradient-to-br from-[#F16822] to-[#D85A1A] flex items-center justify-center text-white font-bold text-sm md:text-base border-4 border-[#0a0a0a] shadow-lg shadow-[#F16822]/40 group-hover:scale-110 transition-transform duration-300">
                                 {index + 1}
                             </div>
                         </div>
-                        <h3 className="text-xl font-bold text-neutral-200 mb-2">
+                        <h3 className="text-xl md:text-2xl font-bold text-white mb-3 group-hover:text-white transition-colors">
                             {step.headline}
                         </h3>
-                        <p className="text-sm text-blue-400 font-medium mb-3 uppercase tracking-wider">
+                        <p className="text-sm md:text-base text-[#F16822] font-semibold mb-4 uppercase tracking-widest">
                             {step.title}
                         </p>
-                        <p className="text-neutral-400 text-sm leading-relaxed max-w-[250px]">
+                        <p className="text-neutral-300 text-sm md:text-base leading-relaxed max-w-[280px]">
                             {step.description}
                         </p>
                     </div>

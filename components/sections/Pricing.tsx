@@ -86,32 +86,33 @@ export default function Pricing() {
                 </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
                 {plans.map((plan, index) => (
                     <div
                         key={index}
-                        className={`relative p-8 rounded-2xl border backdrop-blur-sm transition-all duration-300 flex flex-col ${plan.popular
-                            ? "bg-white/10 border-blue-500/50 shadow-lg shadow-blue-500/10 scale-105 z-10"
-                            : "bg-white/5 border-white/10 hover:bg-white/10"
-                            }`}
+                        className={`relative p-8 md:p-10 rounded-3xl border backdrop-blur-md transition-all duration-500 flex flex-col group ${
+                            plan.popular
+                                ? "bg-gradient-to-br from-white/10 via-white/8 to-white/5 border-[#F16822]/60 shadow-2xl shadow-[#F16822]/20 scale-105 z-10 ring-2 ring-[#F16822]/20"
+                                : "bg-white/5 border-white/10 hover:bg-white/10 hover:border-white/20 hover:shadow-xl hover:shadow-black/20 hover:-translate-y-1"
+                        }`}
                     >
                         {plan.popular && (
-                            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-[#F16822] to-[#D85A1A] text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider shadow-lg shadow-[#F16822]/30">
                                 Most Popular
                             </div>
                         )}
                         <div className="mb-8">
-                            <h3 className="text-xl font-bold text-neutral-200 mb-2">
+                            <h3 className="text-2xl md:text-3xl font-bold text-white mb-2 group-hover:text-white transition-colors">
                                 {plan.name}
                             </h3>
-                            <p className="text-sm text-neutral-400 mb-6">
+                            <p className="text-sm md:text-base text-neutral-300 mb-6 font-medium">
                                 {plan.description}
                             </p>
-                            <div className="flex items-baseline gap-1">
-                                <span className="text-4xl font-bold text-white">
+                            <div className="flex items-baseline gap-2 mb-2">
+                                <span className="text-5xl md:text-6xl font-bold bg-gradient-to-br from-white to-white/80 bg-clip-text text-transparent">
                                     {plan.price}
                                 </span>
-                                <span className="text-neutral-400">{plan.period}</span>
+                                <span className="text-neutral-400 text-lg">{plan.period}</span>
                             </div>
                         </div>
 
@@ -119,7 +120,7 @@ export default function Pricing() {
                             <ul className="space-y-3">
                                 {plan.features.map((feature, idx) => (
                                     <li key={idx} className="flex items-start gap-3 text-sm text-neutral-300">
-                                        <Check className="w-4 h-4 text-blue-500 mt-0.5 shrink-0" />
+                                        <Check className="w-4 h-4 text-[#F16822] mt-0.5 shrink-0" />
                                         {feature}
                                     </li>
                                 ))}
@@ -127,10 +128,11 @@ export default function Pricing() {
                         </div>
 
                         <Button
-                            className={`w-full py-6 text-base font-semibold ${plan.popular
-                                ? "bg-blue-600 hover:bg-blue-700 text-white"
-                                : "bg-white/10 hover:bg-white/20 text-white"
-                                }`}
+                            className={`w-full py-6 md:py-7 text-base font-semibold transition-all duration-300 ${
+                                plan.popular
+                                    ? "bg-gradient-to-r from-[#F16822] to-[#D85A1A] hover:from-[#D85A1A] hover:to-[#F16822] text-white shadow-lg shadow-[#F16822]/30 hover:shadow-xl hover:shadow-[#F16822]/40 hover:scale-[1.02]"
+                                    : "bg-white/10 hover:bg-white/20 text-white border border-white/10 hover:border-white/20 hover:shadow-lg"
+                            }`}
                         >
                             {plan.cta}
                         </Button>

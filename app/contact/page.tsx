@@ -92,8 +92,8 @@ export default function ContactPage() {
             <div className="md:col-span-1 space-y-6">
               <Card className="bg-white/5 border-white/10 backdrop-blur-sm hover:bg-white/10 transition-colors">
                 <CardHeader>
-                  <div className="w-12 h-12 rounded-lg bg-blue-500/20 flex items-center justify-center mb-4">
-                    <Mail className="w-6 h-6 text-blue-400" />
+                  <div className="w-12 h-12 rounded-lg bg-[#005B82]/20 flex items-center justify-center mb-4">
+                    <Mail className="w-6 h-6 text-[#005B82]" />
                   </div>
                   <CardTitle className="text-white">Email Us</CardTitle>
                 </CardHeader>
@@ -101,14 +101,14 @@ export default function ContactPage() {
                   <p className="text-neutral-300 mb-2">General Inquiries</p>
                   <a
                     href="mailto:support@nextin.com"
-                    className="text-blue-400 hover:text-blue-300 transition-colors"
+                    className="text-[#005B82] hover:text-[#004A6B] transition-colors"
                   >
                     support@nextin.com
                   </a>
                   <p className="text-neutral-300 mt-4 mb-2">Sales</p>
                   <a
                     href="mailto:sales@nextin.com"
-                    className="text-blue-400 hover:text-blue-300 transition-colors"
+                    className="text-[#005B82] hover:text-[#004A6B] transition-colors"
                   >
                     sales@nextin.com
                   </a>
@@ -126,7 +126,7 @@ export default function ContactPage() {
                   <p className="text-neutral-300 mb-2">Phone</p>
                   <a
                     href="tel:+1234567890"
-                    className="text-blue-400 hover:text-blue-300 transition-colors"
+                    className="text-[#005B82] hover:text-[#004A6B] transition-colors"
                   >
                     +1 (234) 567-890
                   </a>
@@ -162,7 +162,7 @@ export default function ContactPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-neutral-300 mb-2">We typically respond within</p>
-                  <p className="text-blue-400 font-semibold">24 hours</p>
+                  <p className="text-[#F16822] font-semibold">24 hours</p>
                   <p className="text-neutral-400 text-sm mt-2">
                     For urgent matters, please call us directly.
                   </p>
@@ -193,7 +193,7 @@ export default function ContactPage() {
                           required
                           value={formData.name}
                           onChange={handleChange}
-                          className="bg-white/5 border-white/10 text-white placeholder:text-neutral-500 focus:border-blue-500"
+                          className="bg-white/5 border-white/10 text-white placeholder:text-neutral-500 focus:border-[#005B82]"
                           placeholder="John Doe"
                         />
                       </div>
@@ -208,7 +208,7 @@ export default function ContactPage() {
                           required
                           value={formData.email}
                           onChange={handleChange}
-                          className="bg-white/5 border-white/10 text-white placeholder:text-neutral-500 focus:border-blue-500"
+                          className="bg-white/5 border-white/10 text-white placeholder:text-neutral-500 focus:border-[#005B82]"
                           placeholder="john@example.com"
                         />
                       </div>
@@ -225,7 +225,7 @@ export default function ContactPage() {
                           type="text"
                           value={formData.company}
                           onChange={handleChange}
-                          className="bg-white/5 border-white/10 text-white placeholder:text-neutral-500 focus:border-blue-500"
+                          className="bg-white/5 border-white/10 text-white placeholder:text-neutral-500 focus:border-[#005B82]"
                           placeholder="Acme Inc."
                         />
                       </div>
@@ -239,7 +239,7 @@ export default function ContactPage() {
                           type="tel"
                           value={formData.phone}
                           onChange={handleChange}
-                          className="bg-white/5 border-white/10 text-white placeholder:text-neutral-500 focus:border-blue-500"
+                          className="bg-white/5 border-white/10 text-white placeholder:text-neutral-500 focus:border-[#005B82]"
                           placeholder="+1 (234) 567-890"
                         />
                       </div>
@@ -256,7 +256,7 @@ export default function ContactPage() {
                         required
                         value={formData.subject}
                         onChange={handleChange}
-                        className="bg-white/5 border-white/10 text-white placeholder:text-neutral-500 focus:border-blue-500"
+                        className="bg-white/5 border-white/10 text-white placeholder:text-neutral-500 focus:border-[#005B82]"
                         placeholder="How can we help you?"
                       />
                     </div>
@@ -272,7 +272,7 @@ export default function ContactPage() {
                         rows={6}
                         value={formData.message}
                         onChange={handleChange}
-                        className="flex w-full rounded-md border border-white/10 bg-white/5 px-3 py-2 text-sm text-white placeholder:text-neutral-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 resize-none"
+                        className="flex w-full rounded-md border border-white/10 bg-white/5 px-3 py-2 text-sm text-white placeholder:text-neutral-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#005B82] focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 resize-none"
                         placeholder="Tell us more about your inquiry..."
                       />
                     </div>
@@ -296,7 +296,7 @@ export default function ContactPage() {
                     <Button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full bg-[#0066CC] hover:bg-[#0055AA] text-white border-none py-6 text-base font-semibold"
+                      className="w-full bg-[#F16822] hover:bg-[#D85A1A] text-white border-none py-6 text-base font-semibold"
                     >
                       {isSubmitting ? (
                         "Sending..."
@@ -327,7 +327,7 @@ export default function ContactPage() {
                 </p>
                 <a
                   href="mailto:sales@nextin.com"
-                  className="text-blue-400 hover:text-blue-300 transition-colors inline-flex items-center gap-2"
+                  className="text-[#005B82] hover:text-[#004A6B] transition-colors inline-flex items-center gap-2"
                 >
                   Contact Sales <Mail className="w-4 h-4" />
                 </a>
@@ -344,7 +344,7 @@ export default function ContactPage() {
                 </p>
                 <a
                   href="mailto:support@nextin.com"
-                  className="text-blue-400 hover:text-blue-300 transition-colors inline-flex items-center gap-2"
+                  className="text-[#005B82] hover:text-[#004A6B] transition-colors inline-flex items-center gap-2"
                 >
                   Get Support <MessageSquare className="w-4 h-4" />
                 </a>
@@ -356,9 +356,9 @@ export default function ContactPage() {
         {/* Map Placeholder Section */}
         <section className="py-20 w-full max-w-7xl mx-auto px-4">
           <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm overflow-hidden">
-            <div className="h-96 bg-gradient-to-br from-blue-500/20 to-purple-500/20 flex items-center justify-center">
+            <div className="h-96 bg-gradient-to-br from-[#005B82]/20 to-[#F16822]/20 flex items-center justify-center">
               <div className="text-center">
-                <MapPin className="w-16 h-16 text-blue-400 mx-auto mb-4" />
+                <MapPin className="w-16 h-16 text-[#005B82] mx-auto mb-4" />
                 <p className="text-neutral-300 text-lg">Map Integration</p>
                 <p className="text-neutral-500 text-sm mt-2">
                   Interactive map would be displayed here

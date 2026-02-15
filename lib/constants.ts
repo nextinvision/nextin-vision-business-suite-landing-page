@@ -18,8 +18,15 @@ export const SOCIAL_LINKS = {
 } as const;
 
 export const COLORS = {
-  PRIMARY: "#0066CC",
-  PRIMARY_HOVER: "#0055AA",
+  // Brand Colors
+  NEXTIN_ORANGE: "#F16822",
+  NEXTIN_ORANGE_HOVER: "#D85A1A", // Slightly darker for hover
+  WORKSPACE_BLUE: "#005B82",
+  WORKSPACE_BLUE_HOVER: "#004A6B", // Slightly darker for hover
+  STANDARD_GRAY: "#58595B",
+  // Legacy (keeping for backward compatibility, but using brand colors)
+  PRIMARY: "#005B82", // Workspace Blue
+  PRIMARY_HOVER: "#004A6B", // Workspace Blue Hover
 } as const;
 
 export const ANIMATION = {

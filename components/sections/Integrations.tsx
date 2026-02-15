@@ -16,8 +16,8 @@ const integrations = [
         name: "Email",
         description: "Send invoices and notifications",
         icon: Mail,
-        color: "text-blue-400",
-        bg: "bg-blue-500/10",
+        color: "text-[#005B82]",
+        bg: "bg-[#005B82]/10",
     },
     {
         name: "Calendar",
@@ -73,21 +73,21 @@ export default function Integrations() {
                 </p>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6">
                 {integrations.map((integration, index) => (
                     <div
                         key={index}
-                        className="flex flex-col items-center justify-center p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 group"
+                        className="flex flex-col items-center justify-center p-6 md:p-8 rounded-2xl md:rounded-3xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 hover:border-white/20 transition-all duration-500 group hover:-translate-y-2 hover:shadow-xl hover:shadow-black/30"
                     >
                         <div
-                            className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 ${integration.bg} group-hover:scale-110 transition-transform`}
+                            className={`w-14 h-14 rounded-xl flex items-center justify-center mb-4 ${integration.bg} group-hover:scale-110 group-hover:rotate-3 transition-all duration-500`}
                         >
-                            <integration.icon className={`w-6 h-6 ${integration.color}`} />
+                            <integration.icon className={`w-7 h-7 ${integration.color} group-hover:scale-110 transition-transform duration-300`} />
                         </div>
-                        <h3 className="text-neutral-200 font-semibold mb-1">
+                        <h3 className="text-white font-bold mb-2 text-sm md:text-base group-hover:text-white transition-colors">
                             {integration.name}
                         </h3>
-                        <p className="text-xs text-neutral-500 text-center">
+                        <p className="text-xs md:text-sm text-neutral-300 text-center leading-relaxed">
                             {integration.description}
                         </p>
                     </div>

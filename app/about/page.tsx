@@ -60,8 +60,8 @@ export default function AboutPage() {
             <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-8 hover:bg-white/10 transition-colors">
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-lg bg-blue-500/20 flex items-center justify-center">
-                    <Rocket className="w-6 h-6 text-blue-400" />
+                  <div className="w-12 h-12 rounded-lg bg-[#005B82]/20 flex items-center justify-center">
+                    <Rocket className="w-6 h-6 text-[#005B82]" />
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-white">2020</h3>
@@ -103,8 +103,8 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="bg-white/5 border-white/10 backdrop-blur-sm hover:bg-white/10 transition-colors">
               <CardHeader>
-                <div className="w-12 h-12 rounded-lg bg-blue-500/20 flex items-center justify-center mb-4">
-                  <Target className="w-6 h-6 text-blue-400" />
+                <div className="w-12 h-12 rounded-lg bg-[#005B82]/20 flex items-center justify-center mb-4">
+                  <Target className="w-6 h-6 text-[#005B82]" />
                 </div>
                 <CardTitle className="text-2xl text-white">Our Mission</CardTitle>
               </CardHeader>
@@ -169,8 +169,8 @@ export default function AboutPage() {
                 icon: Users,
                 title: "Transparency",
                 description: "We believe in honest communication, transparent pricing, and clear expectations. No hidden fees, no surprises.",
-                color: "text-blue-400",
-                bg: "bg-blue-500/20",
+                color: "text-[#005B82]",
+                bg: "bg-[#005B82]/20",
               },
               {
                 icon: Target,
@@ -256,7 +256,7 @@ export default function AboutPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contact"
-                className="px-8 py-3 bg-[#0066CC] hover:bg-[#0055AA] text-white rounded-lg font-semibold transition-colors inline-block text-center"
+                className="px-8 py-3 bg-[#F16822] hover:bg-[#D85A1A] text-white rounded-lg font-semibold transition-colors inline-block text-center"
               >
                 Get in Touch
               </Link>

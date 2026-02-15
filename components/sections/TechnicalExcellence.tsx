@@ -52,35 +52,68 @@ export default function TechnicalExcellence() {
 
 function MultiTenantCard() {
     return (
-        <Card className="h-full bg-white/5 border-white/10 backdrop-blur-sm hover:bg-white/10 transition-colors">
+        <Card className="h-full bg-white/5 border-white/10 backdrop-blur-sm hover:bg-white/10 hover:border-white/20 transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/30">
             <CardHeader>
-                <div className="w-10 h-10 rounded-lg bg-blue-500/20 flex items-center justify-center mb-2">
-                    <Database className="w-5 h-5 text-blue-400" />
+                <div className="w-12 h-12 rounded-xl bg-[#005B82]/20 flex items-center justify-center mb-3 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
+                    <Database className="w-6 h-6 text-[#005B82] group-hover:text-[#F16822] transition-colors duration-300" />
                 </div>
-                <CardTitle className="text-neutral-200">Multi-Tenant Architecture</CardTitle>
-                <CardDescription className="text-neutral-400">
-                    Enterprise-Grade Data Isolation
+                <CardTitle className="text-white text-xl md:text-2xl mb-2">Multi-Tenant Architecture</CardTitle>
+                <CardDescription className="text-neutral-300 text-base mb-4">
+                    Enterprise-Grade Data Isolation & Scalability
                 </CardDescription>
             </CardHeader>
             <CardContent>
-                <ul className="space-y-3 text-sm text-neutral-400">
-                    <li className="flex items-start gap-2">
-                        <span className="mt-1 w-1.5 h-1.5 rounded-full bg-blue-500 shrink-0" />
-                        Complete data isolation between companies
-                    </li>
-                    <li className="flex items-start gap-2">
-                        <span className="mt-1 w-1.5 h-1.5 rounded-full bg-blue-500 shrink-0" />
-                        Optional dedicated database per company
-                    </li>
-                    <li className="flex items-start gap-2">
-                        <span className="mt-1 w-1.5 h-1.5 rounded-full bg-blue-500 shrink-0" />
-                        Flexible database routing (shared or dedicated)
-                    </li>
-                    <li className="flex items-start gap-2">
-                        <span className="mt-1 w-1.5 h-1.5 rounded-full bg-blue-500 shrink-0" />
-                        Support for unlimited companies
-                    </li>
-                </ul>
+                <div className="space-y-4">
+                    <div>
+                        <h4 className="text-white font-semibold text-sm md:text-base mb-3 uppercase tracking-wider">Core Features</h4>
+                        <ul className="space-y-3 text-sm md:text-base text-neutral-300">
+                            <li className="flex items-start gap-3">
+                                <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                                Complete data isolation between companies with tenant-based routing
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                                Optional dedicated database per company for maximum security
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                                Flexible database routing (shared or dedicated) based on requirements
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                                Support for unlimited companies with horizontal scaling
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div className="pt-4 border-t border-white/10">
+                        <h4 className="text-white font-semibold text-sm md:text-base mb-3 uppercase tracking-wider">Benefits</h4>
+                        <ul className="space-y-2 text-sm md:text-base text-neutral-300">
+                            <li className="flex items-start gap-3">
+                                <span className="mt-1.5 w-2 h-2 rounded-full bg-[#005B82] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                                <span><strong className="text-white">Cost Efficiency:</strong> Shared infrastructure reduces operational costs</span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <span className="mt-1.5 w-2 h-2 rounded-full bg-[#005B82] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                                <span><strong className="text-white">Compliance Ready:</strong> Meet regulatory requirements with dedicated databases</span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <span className="mt-1.5 w-2 h-2 rounded-full bg-[#005B82] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                                <span><strong className="text-white">Performance:</strong> Optimized queries with intelligent connection pooling</span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <span className="mt-1.5 w-2 h-2 rounded-full bg-[#005B82] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                                <span><strong className="text-white">Scalability:</strong> Add new tenants without system downtime</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div className="pt-4 border-t border-white/10">
+                        <p className="text-xs md:text-sm text-neutral-400 italic leading-relaxed">
+                            Our multi-tenant architecture ensures that each company&apos;s data is completely isolated, whether using shared or dedicated databases. This design allows for seamless scaling while maintaining the highest levels of security and performance.
+                        </p>
+                    </div>
+                </div>
             </CardContent>
         </Card>
     );
