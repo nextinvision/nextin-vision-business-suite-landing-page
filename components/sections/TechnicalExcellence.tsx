@@ -1,7 +1,7 @@
 "use client";
 
 import BlurText from "@/components/common/BlurText";
-import { BentoGridShowcase } from "@/components/common/BentoGrid";
+import { motion } from "motion/react";
 import {
     Card,
     CardContent,
@@ -11,12 +11,10 @@ import {
 } from "@/components/ui/card";
 import {
     Database,
-    Server,
     Zap,
-    Code,
     Layers,
     Globe,
-    Cpu,
+    Shield,
 } from "lucide-react";
 
 export default function TechnicalExcellence() {
@@ -36,21 +34,63 @@ export default function TechnicalExcellence() {
                 </p>
             </div>
 
-            <BentoGridShowcase
-                integration={<MultiTenantCard />}
-                trackers={<ScalablePerformanceCard />}
-                statistic={<ScalableStorageCard />}
-                focus={<FrontendStackCard />}
-                productivity={<BackendStackCard />}
-                shortcuts={<CustomDomainCard />}
-            />
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: 0.1 }}
+                >
+                    <MultiTenantCard />
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
+                >
+                    <ScalablePerformanceCard />
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: 0.3 }}
+                >
+                    <ScalableStorageCard />
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: 0.4 }}
+                >
+                    <CustomDomainCard />
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: 0.5 }}
+                >
+                    <BackendStackCard />
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: 0.6 }}
+                >
+                    <SecurityCard />
+                </motion.div>
+            </div>
         </section>
     );
 }
 
 function MultiTenantCard() {
     return (
-        <Card className="h-full bg-white/5 border-white/10 backdrop-blur-sm hover:bg-white/10 hover:border-white/20 transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/30">
+        <Card className="w-full h-full flex flex-col bg-white/5 border-white/10 backdrop-blur-sm hover:bg-white/10 hover:border-white/20 transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/30">
             <CardHeader>
                 <div className="w-12 h-12 rounded-xl bg-[#005B82]/20 flex items-center justify-center mb-3 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
                     <Database className="w-6 h-6 text-[#005B82] group-hover:text-[#F16822] transition-colors duration-300" />
@@ -60,58 +100,29 @@ function MultiTenantCard() {
                     Enterprise-Grade Data Isolation & Scalability
                 </CardDescription>
             </CardHeader>
-            <CardContent>
-                <div className="space-y-4">
-                    <div>
-                        <h4 className="text-white font-bold text-sm md:text-base mb-3 uppercase tracking-[0.15em] letter-spacing-widest">Core Features</h4>
-                        <ul className="space-y-3 text-sm md:text-base lg:text-lg text-neutral-200 leading-relaxed tracking-wide font-light">
-                            <li className="flex items-start gap-3">
-                                <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
-                                Complete data isolation between companies with tenant-based routing
-                            </li>
-                            <li className="flex items-start gap-3">
-                                <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
-                                Optional dedicated database per company for maximum security
-                            </li>
-                            <li className="flex items-start gap-3">
-                                <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
-                                Flexible database routing (shared or dedicated) based on requirements
-                            </li>
-                            <li className="flex items-start gap-3">
-                                <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
-                                Support for unlimited companies with horizontal scaling
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div className="pt-4 border-t border-white/10">
-                        <h4 className="text-white font-bold text-sm md:text-base mb-3 uppercase tracking-[0.15em] letter-spacing-widest">Benefits</h4>
-                        <ul className="space-y-2 text-sm md:text-base lg:text-lg text-neutral-200 leading-relaxed tracking-wide font-light">
-                            <li className="flex items-start gap-3">
-                                <span className="mt-1.5 w-2 h-2 rounded-full bg-[#005B82] shrink-0 group-hover:scale-125 transition-transform duration-300" />
-                                <span><strong className="text-white">Cost Efficiency:</strong> Shared infrastructure reduces operational costs</span>
-                            </li>
-                            <li className="flex items-start gap-3">
-                                <span className="mt-1.5 w-2 h-2 rounded-full bg-[#005B82] shrink-0 group-hover:scale-125 transition-transform duration-300" />
-                                <span><strong className="text-white">Compliance Ready:</strong> Meet regulatory requirements with dedicated databases</span>
-                            </li>
-                            <li className="flex items-start gap-3">
-                                <span className="mt-1.5 w-2 h-2 rounded-full bg-[#005B82] shrink-0 group-hover:scale-125 transition-transform duration-300" />
-                                <span><strong className="text-white">Performance:</strong> Optimized queries with intelligent connection pooling</span>
-                            </li>
-                            <li className="flex items-start gap-3">
-                                <span className="mt-1.5 w-2 h-2 rounded-full bg-[#005B82] shrink-0 group-hover:scale-125 transition-transform duration-300" />
-                                <span><strong className="text-white">Scalability:</strong> Add new tenants without system downtime</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div className="pt-4 border-t border-white/10">
-                        <p className="text-xs md:text-sm lg:text-base text-neutral-300 italic leading-relaxed tracking-wide font-light">
-                            Our multi-tenant architecture ensures that each company&apos;s data is completely isolated, whether using shared or dedicated databases. This design allows for seamless scaling while maintaining the highest levels of security and performance.
-                        </p>
-                    </div>
-                </div>
+            <CardContent className="flex-1">
+                <ul className="space-y-3 text-sm md:text-base lg:text-lg text-neutral-200 leading-relaxed tracking-wide font-light">
+                    <li className="flex items-start gap-3">
+                        <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                        Complete data isolation ensures your company&apos;s information remains private and secure
+                    </li>
+                    <li className="flex items-start gap-3">
+                        <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                        Reduce operational costs with shared infrastructure while maintaining data security
+                    </li>
+                    <li className="flex items-start gap-3">
+                        <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                        Meet strict compliance requirements with optional dedicated database options
+                    </li>
+                    <li className="flex items-start gap-3">
+                        <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                        Scale your business without limits—add new companies or divisions seamlessly
+                    </li>
+                    <li className="flex items-start gap-3">
+                        <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                        Zero downtime when expanding—your business operations continue uninterrupted
+                    </li>
+                </ul>
             </CardContent>
         </Card>
     );
@@ -119,7 +130,7 @@ function MultiTenantCard() {
 
 function ScalablePerformanceCard() {
     return (
-        <Card className="h-full bg-white/5 border-white/10 backdrop-blur-sm hover:bg-white/10 transition-colors">
+        <Card className="w-full h-full flex flex-col bg-white/5 border-white/10 backdrop-blur-sm hover:bg-white/10 hover:border-white/20 transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/30">
             <CardHeader>
                 <div className="w-10 h-10 rounded-lg bg-orange-500/20 flex items-center justify-center mb-2">
                     <Zap className="w-5 h-5 text-orange-400" />
@@ -129,19 +140,27 @@ function ScalablePerformanceCard() {
                     Grows with Your Business
                 </CardDescription>
             </CardHeader>
-            <CardContent>
-                <ul className="space-y-2 text-sm md:text-base text-neutral-200 leading-relaxed tracking-wide font-light">
-                    <li className="flex items-center gap-2">
-                        <Server className="w-4 h-4 text-orange-500" />
-                        Horizontal scaling support
+            <CardContent className="flex-1">
+                <ul className="space-y-3 text-sm md:text-base lg:text-lg text-neutral-200 leading-relaxed tracking-wide font-light">
+                    <li className="flex items-start gap-3">
+                        <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                        Grow your business without worrying about infrastructure limitations
                     </li>
-                    <li className="flex items-center gap-2">
-                        <Server className="w-4 h-4 text-orange-500" />
-                        Connection pooling for optimal performance
+                    <li className="flex items-start gap-3">
+                        <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                        Handle increased traffic and users without performance degradation
                     </li>
-                    <li className="flex items-center gap-2">
-                        <Server className="w-4 h-4 text-orange-500" />
-                        Efficient caching strategies
+                    <li className="flex items-start gap-3">
+                        <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                        Fast response times keep your team productive and customers satisfied
+                    </li>
+                    <li className="flex items-start gap-3">
+                        <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                        Automatic resource allocation adapts to your business needs in real-time
+                    </li>
+                    <li className="flex items-start gap-3">
+                        <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                        Reliable uptime ensures your business operations never stop
                     </li>
                 </ul>
             </CardContent>
@@ -151,58 +170,34 @@ function ScalablePerformanceCard() {
 
 function ScalableStorageCard() {
     return (
-        <Card className="h-full bg-white/5 border-white/10 backdrop-blur-sm hover:bg-white/10 transition-colors">
+        <Card className="w-full h-full flex flex-col bg-white/5 border-white/10 backdrop-blur-sm hover:bg-white/10 hover:border-white/20 transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/30">
             <CardHeader>
                 <div className="w-10 h-10 rounded-lg bg-purple-500/20 flex items-center justify-center mb-2">
                     <Database className="w-5 h-5 text-purple-400" />
                 </div>
                 <CardTitle className="text-white text-lg md:text-xl font-extrabold tracking-tight">Storage & Optimization</CardTitle>
             </CardHeader>
-            <CardContent>
-                <ul className="space-y-2 text-sm md:text-base text-neutral-200 leading-relaxed tracking-wide font-light">
-                    <li className="flex items-center gap-2">
-                        <Cpu className="w-4 h-4 text-purple-500" />
-                        Stateless API design
+            <CardContent className="flex-1">
+                <ul className="space-y-3 text-sm md:text-base lg:text-lg text-neutral-200 leading-relaxed tracking-wide font-light">
+                    <li className="flex items-start gap-3">
+                        <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                        Store unlimited files, documents, and data without worrying about storage limits
                     </li>
-                    <li className="flex items-center gap-2">
-                        <Cpu className="w-4 h-4 text-purple-500" />
-                        Database query optimization
+                    <li className="flex items-start gap-3">
+                        <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                        Optimized performance means faster access to your business data and files
                     </li>
-                    <li className="flex items-center gap-2">
-                        <Cpu className="w-4 h-4 text-purple-500" />
-                        GridFS for large file storage
+                    <li className="flex items-start gap-3">
+                        <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                        Reduce storage costs with intelligent data management and optimization
                     </li>
-                </ul>
-            </CardContent>
-        </Card>
-    );
-}
-
-function FrontendStackCard() {
-    return (
-        <Card className="h-full bg-white/5 border-white/10 backdrop-blur-sm hover:bg-white/10 transition-colors">
-            <CardHeader>
-                <div className="w-10 h-10 rounded-lg bg-cyan-500/20 flex items-center justify-center mb-2">
-                    <Code className="w-5 h-5 text-cyan-400" />
-                </div>
-                <CardTitle className="text-white text-lg md:text-xl font-extrabold tracking-tight">Modern Technology Stack</CardTitle>
-                <CardDescription className="text-neutral-200 text-base font-semibold tracking-wide">
-                    Built with Best-in-Class Tools
-                </CardDescription>
-            </CardHeader>
-            <CardContent>
-                <ul className="space-y-2 text-sm md:text-base text-neutral-200 leading-relaxed tracking-wide font-light">
-                    <li className="flex items-center gap-2">
-                        <Globe className="w-4 h-4 text-cyan-500" />
-                        Next.js 15: Latest React framework with App Router
+                    <li className="flex items-start gap-3">
+                        <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                        Quick file retrieval helps your team work more efficiently and serve clients faster
                     </li>
-                    <li className="flex items-center gap-2">
-                        <Globe className="w-4 h-4 text-cyan-500" />
-                        React 19: Modern UI library
-                    </li>
-                    <li className="flex items-center gap-2">
-                        <Globe className="w-4 h-4 text-cyan-500" />
-                        TypeScript: Type-safe development
+                    <li className="flex items-start gap-3">
+                        <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                        Secure data backup ensures your business information is always protected
                     </li>
                 </ul>
             </CardContent>
@@ -212,26 +207,34 @@ function FrontendStackCard() {
 
 function BackendStackCard() {
     return (
-        <Card className="h-full bg-white/5 border-white/10 backdrop-blur-sm hover:bg-white/10 transition-colors">
+        <Card className="w-full h-full flex flex-col bg-white/5 border-white/10 backdrop-blur-sm hover:bg-white/10 hover:border-white/20 transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/30">
             <CardHeader>
                 <div className="w-10 h-10 rounded-lg bg-pink-500/20 flex items-center justify-center mb-2">
                     <Layers className="w-5 h-5 text-pink-400" />
                 </div>
                 <CardTitle className="text-white text-lg md:text-xl font-extrabold tracking-tight">Backend & Database</CardTitle>
             </CardHeader>
-            <CardContent>
-                <ul className="space-y-2 text-sm md:text-base text-neutral-200 leading-relaxed tracking-wide font-light">
-                    <li className="flex items-center gap-2">
-                        <Database className="w-4 h-4 text-pink-500" />
-                        MongoDB: Scalable NoSQL database
+            <CardContent className="flex-1">
+                <ul className="space-y-3 text-sm md:text-base lg:text-lg text-neutral-200 leading-relaxed tracking-wide font-light">
+                    <li className="flex items-start gap-3">
+                        <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                        Robust database infrastructure ensures your business data is always accessible
                     </li>
-                    <li className="flex items-center gap-2">
-                        <Database className="w-4 h-4 text-pink-500" />
-                        Prisma: Modern ORM for database operations
+                    <li className="flex items-start gap-3">
+                        <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                        Fast data processing enables real-time insights for better business decisions
                     </li>
-                    <li className="flex items-center gap-2">
-                        <Database className="w-4 h-4 text-pink-500" />
-                        Tailwind CSS: Utility-first styling
+                    <li className="flex items-start gap-3">
+                        <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                        Reliable backend systems keep your operations running smoothly 24/7
+                    </li>
+                    <li className="flex items-start gap-3">
+                        <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                        Seamless data integration connects all your business processes in one place
+                    </li>
+                    <li className="flex items-start gap-3">
+                        <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                        Future-proof architecture grows with your business needs and requirements
                     </li>
                 </ul>
             </CardContent>
@@ -241,7 +244,7 @@ function BackendStackCard() {
 
 function CustomDomainCard() {
     return (
-        <Card className="h-full bg-white/5 border-white/10 backdrop-blur-sm hover:bg-white/10 hover:border-white/20 transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/30">
+        <Card className="w-full h-full flex flex-col bg-white/5 border-white/10 backdrop-blur-sm hover:bg-white/10 hover:border-white/20 transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/30">
             <CardHeader>
                 <div className="w-12 h-12 rounded-xl bg-[#F16822]/20 flex items-center justify-center mb-3 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
                     <Globe className="w-6 h-6 text-[#F16822] group-hover:text-[#005B82] transition-colors duration-300" />
@@ -251,55 +254,69 @@ function CustomDomainCard() {
                     Maintain Brand Authenticity & Professional Identity
                 </CardDescription>
             </CardHeader>
-            <CardContent>
-                <div className="space-y-4">
-                    <div>
-                        <h4 className="text-white font-bold text-sm md:text-base mb-3 uppercase tracking-[0.15em] letter-spacing-widest">Key Features</h4>
-                        <ul className="space-y-3 text-sm md:text-base lg:text-lg text-neutral-200 leading-relaxed tracking-wide font-light">
-                            <li className="flex items-start gap-3">
-                                <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
-                                Use your own company domain (e.g., app.yourcompany.com) instead of the default workspace URL
-                            </li>
-                            <li className="flex items-start gap-3">
-                                <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
-                                Maintain complete brand consistency across all touchpoints
-                            </li>
-                            <li className="flex items-start gap-3">
-                                <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
-                                Enhanced professional credibility with branded access URLs
-                            </li>
-                            <li className="flex items-start gap-3">
-                                <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
-                                SSL certificate management and secure domain routing
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div className="pt-4 border-t border-white/10">
-                        <h4 className="text-white font-bold text-sm md:text-base mb-3 uppercase tracking-[0.15em] letter-spacing-widest">Benefits</h4>
-                        <ul className="space-y-2 text-sm md:text-base lg:text-lg text-neutral-200 leading-relaxed tracking-wide font-light">
-                            <li className="flex items-start gap-3">
-                                <span className="mt-1.5 w-2 h-2 rounded-full bg-[#005B82] shrink-0 group-hover:scale-125 transition-transform duration-300" />
-                                <span className="font-semibold text-white">Brand Authenticity:</span> Your team and clients access the platform through your own domain, reinforcing your brand identity.
-                            </li>
-                            <li className="flex items-start gap-3">
-                                <span className="mt-1.5 w-2 h-2 rounded-full bg-[#005B82] shrink-0 group-hover:scale-125 transition-transform duration-300" />
-                                <span className="font-semibold text-white">Professional Image:</span> Custom domains project a more professional and established business presence.
-                            </li>
-                            <li className="flex items-start gap-3">
-                                <span className="mt-1.5 w-2 h-2 rounded-full bg-[#005B82] shrink-0 group-hover:scale-125 transition-transform duration-300" />
-                                <span className="font-semibold text-white">Trust & Credibility:</span> Clients and partners see your domain, building trust and confidence in your platform.
-                            </li>
-                            <li className="flex items-start gap-3">
-                                <span className="mt-1.5 w-2 h-2 rounded-full bg-[#005B82] shrink-0 group-hover:scale-125 transition-transform duration-300" />
-                                <span className="font-semibold text-white">Seamless Integration:</span> Works seamlessly with your existing IT infrastructure and domain management.
-                            </li>
-                        </ul>
-                    </div>
-                    <p className="text-xs md:text-sm lg:text-base text-neutral-300 italic leading-relaxed tracking-wide font-light">
-                        Our custom domain integration allows enterprise customers to use their own company domain, ensuring that the platform feels like a native part of their business infrastructure while maintaining complete brand authenticity and professional identity.
-                    </p>
+            <CardContent className="flex-1">
+                <ul className="space-y-3 text-sm md:text-base lg:text-lg text-neutral-200 leading-relaxed tracking-wide font-light">
+                    <li className="flex items-start gap-3">
+                        <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                        Use your own company domain (e.g., app.yourcompany.com) to maintain brand authenticity
+                    </li>
+                    <li className="flex items-start gap-3">
+                        <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                        Project a professional image that reinforces your brand identity with clients and partners
+                    </li>
+                    <li className="flex items-start gap-3">
+                        <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                        Build trust and credibility by using your own domain instead of generic workspace URLs
+                    </li>
+                    <li className="flex items-start gap-3">
+                        <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                        Seamlessly integrate with your existing IT infrastructure and domain management
+                    </li>
+                    <li className="flex items-start gap-3">
+                        <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                        Ensure secure access with SSL certificates and professional domain routing
+                    </li>
+                </ul>
+            </CardContent>
+        </Card>
+    );
+}
+
+function SecurityCard() {
+    return (
+        <Card className="w-full h-full flex flex-col bg-white/5 border-white/10 backdrop-blur-sm hover:bg-white/10 hover:border-white/20 transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/30">
+            <CardHeader>
+                <div className="w-12 h-12 rounded-xl bg-green-500/20 flex items-center justify-center mb-3 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
+                    <Shield className="w-6 h-6 text-green-400 group-hover:text-[#F16822] transition-colors duration-300" />
                 </div>
+                <CardTitle className="text-white text-xl md:text-2xl lg:text-3xl mb-2 font-extrabold tracking-tight leading-tight">Security First</CardTitle>
+                <CardDescription className="text-neutral-200 text-base md:text-lg mb-4 font-semibold tracking-wide leading-relaxed">
+                    Your Data is Protected
+                </CardDescription>
+            </CardHeader>
+            <CardContent className="flex-1">
+                <ul className="space-y-3 text-sm md:text-base lg:text-lg text-neutral-200 leading-relaxed tracking-wide font-light">
+                    <li className="flex items-start gap-3">
+                        <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                        Protect your business data with enterprise-grade security measures and encryption
+                    </li>
+                    <li className="flex items-start gap-3">
+                        <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                        Control access with role-based permissions to ensure only authorized users see sensitive information
+                    </li>
+                    <li className="flex items-start gap-3">
+                        <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                        Meet compliance requirements and industry standards for data protection and privacy
+                    </li>
+                    <li className="flex items-start gap-3">
+                        <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                        Prevent unauthorized access and data breaches with advanced security protocols
+                    </li>
+                    <li className="flex items-start gap-3">
+                        <span className="mt-1.5 w-2 h-2 rounded-full bg-[#F16822] shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                        Maintain complete audit trails for regulatory compliance and business accountability
+                    </li>
+                </ul>
             </CardContent>
         </Card>
     );

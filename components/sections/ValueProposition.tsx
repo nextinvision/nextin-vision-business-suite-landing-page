@@ -11,17 +11,17 @@ export default function ValueProposition() {
 
     return (
         <section className="w-full pt-0 pb-6 md:pb-10 relative z-10">
-            <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-
-                {/* Left Content */}
-                <div className="space-y-8">
+            <div className="max-w-6xl mx-auto px-6">
+                
+                {/* Top Content - Centered */}
+                <div className="text-center mb-12 md:mb-16 space-y-6">
                     <BlurText
                         text="Everything Your Business Needs, in One Place"
-                        className="text-3xl md:text-5xl lg:text-6xl text-white font-heading font-extrabold leading-tight tracking-tight"
+                        className="text-3xl md:text-5xl lg:text-6xl text-white font-heading font-extrabold leading-tight tracking-tight justify-center"
                         delay={50}
                     />
 
-                    <div>
+                    <div className="max-w-3xl mx-auto">
                         <div className={`text-muted-foreground ${isExpanded ? '' : 'line-clamp-4 md:line-clamp-none'}`}>
                             <ShinyText
                                 text="Nextin Project Management is a comprehensive SaaS platform designed to help businesses of all sizes manage their operations efficiently. From project planning to team collaboration, from invoicing to HR management—we've got you covered."
@@ -39,8 +39,8 @@ export default function ValueProposition() {
                     </div>
                 </div>
 
-                {/* Right Content */}
-                <div className="space-y-4">
+                {/* Feature List - Grid Layout */}
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
                     {[
                         "Complete Business Suite: Project management, CRM, invoicing, HR, and more",
                         "Enterprise-Grade Security: Multi-tenant architecture with complete data isolation",
@@ -51,15 +51,17 @@ export default function ValueProposition() {
                     ].map((item, index) => (
                         <div
                             key={item}
-                            className={`group flex items-start gap-4 bg-white/5 border border-white/10 rounded-xl md:rounded-2xl p-5 md:p-6 shadow-sm hover:bg-white/10 hover:border-white/20 hover:shadow-lg hover:-translate-y-1 transition-all duration-500 ${index >= 2 && !showAllItems ? 'hidden md:flex' : 'flex'}`}
+                            className={`group flex items-start gap-4 bg-white/5 border border-white/10 rounded-xl md:rounded-2xl p-5 md:p-6 shadow-sm hover:bg-white/10 hover:border-white/20 hover:shadow-lg hover:-translate-y-1 transition-all duration-500 ${index >= 3 && !showAllItems ? 'hidden lg:flex' : 'flex'}`}
                         >
                             <CheckCircle className="w-7 h-7 shrink-0 text-[#F16822] mt-0.5 group-hover:scale-110 transition-transform duration-300" />
                             <p className="text-white text-sm md:text-base lg:text-lg leading-relaxed font-semibold tracking-wide">{item}</p>
                         </div>
                     ))}
+                </div>
+                <div className="flex justify-center mt-6">
                     <button
                         onClick={() => setShowAllItems(!showAllItems)}
-                        className="w-full py-2 text-sm text-[#F16822] hover:text-[#D85A1A] font-medium md:hidden focus:outline-none"
+                        className="py-2 text-sm text-[#F16822] hover:text-[#D85A1A] font-medium md:hidden focus:outline-none"
                     >
                         {showAllItems ? "View Less" : "View More"}
                     </button>

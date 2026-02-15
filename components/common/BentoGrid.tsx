@@ -75,38 +75,38 @@ export const BentoGridShowcase = ({
         "grid w-full grid-cols-1 gap-6 md:grid-cols-3",
         // Defines 3 explicit rows on medium screens and up
         "md:grid-rows-3",
-        // Use minmax to ensure cards can grow but have a minimum height
-        "auto-rows-[minmax(180px,auto)]",
+        // Let rows size based on content
+        "auto-rows-auto",
         className
       )}
     >
-      {/* Slot 1: Integration (Spans 2 rows) */}
-      <motion.div variants={itemVariants} className="md:col-span-1 md:row-span-3">
+      {/* Slot 1: Integration (Spans 3 rows) */}
+      <motion.div variants={itemVariants} className="md:col-span-1 md:row-span-3 flex">
         {integration}
       </motion.div>
 
       {/* Slot 2: Trackers */}
-      <motion.div variants={itemVariants} className="md:col-span-1 md:row-span-1">
+      <motion.div variants={itemVariants} className="md:col-span-1 md:row-span-1 flex">
         {trackers}
       </motion.div>
 
       {/* Slot 3: Statistic */}
-      <motion.div variants={itemVariants} className="md:col-span-1 md:row-span-1">
+      <motion.div variants={itemVariants} className="md:col-span-1 md:row-span-1 flex">
         {statistic}
       </motion.div>
 
       {/* Slot 4: Focus */}
-      <motion.div variants={itemVariants} className="md:col-span-1 md:row-span-1">
+      <motion.div variants={itemVariants} className="md:col-span-1 md:row-span-1 flex">
         {focus}
       </motion.div>
 
       {/* Slot 5: Productivity */}
-      <motion.div variants={itemVariants} className="md:col-span-1 md:row-span-1">
+      <motion.div variants={itemVariants} className="md:col-span-1 md:row-span-1 flex">
         {productivity}
       </motion.div>
 
       {/* Slot 6: Shortcuts (Spans 2 cols) */}
-      <motion.div variants={itemVariants} className="md:col-span-2 md:row-span-1">
+      <motion.div variants={itemVariants} className="md:col-span-2 md:row-span-1 flex">
         {shortcuts}
       </motion.div>
     </motion.section>
